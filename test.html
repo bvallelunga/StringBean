@@ -2,34 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>String Bean - The Featherweight Responsive CSS Framework</title>
 
-    <link rel="stylesheet" href="css/String-Bean.css" />
+    <link href='css/String-Bean.css' rel='stylesheet' type='text/css'>
 
     <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:500' rel='stylesheet' type='text/css'>
 
     <style type="text/css">
         body { font-family: 'Alegreya Sans', sans-serif; }
-        .graded-bar { background:#000; }
-        .graded-bar h1 { color:#fff; margin-top:-0.25rem; font-size:1.5rem; line-height:1.75rem; }
+        #graded-bar { background:#000; }
+        #graded-bar h1 { color:#fff; padding:0; font-size:1.5rem; line-height:2rem; }
+        #Strapline { color:#fff; }
     </style>
 
 </head>
 <body>
 
-    <header class="container graded-bar">
+    <header class="container" id="graded-bar">
 
         <nav class="row">
-            <div class="column xsmall-15 small-15 medium-10 large-11 xlarge-12">
+            <div class="column no-padding xsmall-15 small-15 medium-10 large-11 xlarge-12">
                  <h1>
-                     ComaKey
+                     String Bean
                  </h1>
             </div>
 
-            <div class="column no-padding xsmall-15 small-15 medium-5 large-4 xlarge-3">
-                <p class="align-right">
-                    Powering the internet, slowly.
-                </p>
+            <div class="column no-padding xsmall-15 small-15 medium-5 large-4 xlarge-3 align-right">
+                <small id="Strapline">
+                    Powering the internet, gently.
+                </small>
             </div>
         </nav>
 
@@ -40,65 +41,104 @@
 
         <div class="column xsmall-15 small-15 medium-9 large-10 xlarge-11">
 
-            <h1>
-                Welcome to ComaKey!
-            </h1>
+            <h1>String Bean</h1>
 
             <p>
-                ComaKey is the internet's very-own lightweight CSS framework - weighing in at an impressive 150 lines of code, it makes this the lightest responsive framework on the internet.
+                The featherweight responsive CSS Framework based on a 16-point system, rhather than the traditional 12-point system that other frameworks use.
             </p>
 
             <p>
-                <a href="" class="button success rounded">
-                    Download v0.15b
-                </a>
-
-                <a href="" class="button information rounded">
-                    Learn more
-                </a>
-
-                <a href="" class="button information rounded">
-                    Learn more
-                </a>
+                The extra 4 break points give you greater control over the widths of content on your site.  Sometimes 12 is just too few, especially on a high resolution screen, such as 4K - at 4K String Bean comes into its own!
             </p>
+
+
+
+            <h4>Simple Header Layout</h4>
+
+<pre><code>&lt;header class="container"&gt;
+    &lt;nav class="row"&gt;
+        &lt;div class="column xsmall-15 small-15 medium-10 large-11 xlarge-12"&gt;
+            &lt;h1&gt;
+                String Bean
+            &lt;/h1&gt;
+        &lt;/div&gt;
+        &lt;div class="column xsmall-15 small-15 medium-5 large-4 xlarge-3"&gt;
+            &lt;p id="Strapline"&gt;
+                Powering the internet, gently.
+            &lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/nav&gt;
+&lt;/header&gt;
+</code></pre>
+
+
+            <h4>Buttons</h4>
+
+<pre><code>&lt;a href="/login" class="button normal information"&gt;Login&lt;/a&gt;
+&lt;a href="/login" class="button normal alert"&gt;Register&lt;/a&gt;</code></pre>
+
+
+            <h4>Grid</h4>
+
+<pre><code>&lt;div class="grid"&gt;
+    &lt;li class="box xsmall-15 small-15 medium-7 large-5 xlarge-3"&gt;
+        Box #1
+    &lt;/li&gt;
+    &lt;li class="box xsmall-15 small-15 medium-7 large-5 xlarge-3"&gt;
+        Box #2
+    &lt;/li&gt;
+    &lt;li class="box xsmall-15 small-15 medium-7 large-5 xlarge-3"&gt;
+        Box #3
+    &lt;/li&gt;
+&lt;/div&gt;</code></pre>
+
+            <p>As simple as that!.</p>
 
         </div>
 
         <!-- Right Menu -->
         <aside class="column xsmall-15 small-15 medium-6 large-5 xlarge-4">
 
+            <p>
+                <h3>Some pictures of string beans...</h3>
+            </p>
+
             <ol class="grid">
 
-                <li class="box xsmall-15 small-15 medium-7 large-5 xlarge-3 align-center">
-                    Box #1
+                <li class="box xsmall-15 small-15 medium-5 large-5 xlarge-5 align-center">
+                    <img src="img/8.jpg" alt="" class="full-15" />
                 </li>
 
-                <li class="box xsmall-15 small-15 medium-7 large-5 xlarge-3 align-center">
-                    Box #2
+                <li class="box xsmall-15 small-15 medium-5 large-5 xlarge-5 align-center">
+                    <img src="img/1.jpg" alt="" class="full-15" />
                 </li>
 
-                <li class="box xsmall-15 small-15 medium-7 large-5 xlarge-3 align-center">
-                    Box #3
+                <li class="box xsmall-15 small-15 medium-5 large-5 xlarge-5 align-center">
+                    <img src="img/2.jpg" alt="" class="full-15" />
                 </li>
 
-                <li class="box xsmall-15 small-15 medium-7 large-5 xlarge-3 align-center">
-                    Box #4
+                <li class="box xsmall-15 small-15 medium-5 large-5 xlarge-5 align-center">
+                    <img src="img/4.jpg" alt="" class="full-15" />
                 </li>
 
-                <li class="box xsmall-15 small-15 medium-7 large-5 xlarge-3 align-center">
-                    Box #5
+                <li class="box xsmall-15 small-15 medium-5 large-5 xlarge-5 align-center">
+                    <img src="img/5.jpg" alt="" class="full-15" />
                 </li>
 
-                <li class="box xsmall-15 small-15 medium-7 large-5 xlarge-3 align-center">
-                    Box #6
+                <li class="box xsmall-15 small-15 medium-5 large-5 xlarge-5 align-center">
+                    <img src="img/6.jpg" alt="" class="full-15" />
                 </li>
 
-                <li class="box xsmall-15 small-15 medium-7 large-5 xlarge-3 align-center">
-                    Box #7
+                <li class="box xsmall-15 small-15 medium-5 large-5 xlarge-5 align-center">
+                    <img src="img/7.jpg" alt="" class="full-15" />
                 </li>
 
-                <li class="box xsmall-15 small-15 medium-7 large-5 xlarge-3 align-center">
-                    Box #8
+                <li class="box xsmall-15 small-15 medium-5 large-5 xlarge-5 align-center">
+                    <img src="img/9.jpg" alt="" class="full-15" />
+                </li>
+
+                <li class="box xsmall-15 small-15 medium-5 large-5 xlarge-5 align-center">
+                    <img src="img/12.jpg" alt="" class="full-15" />
                 </li>
 
             </ol>
