@@ -1,0 +1,109 @@
+/** Resets **/
+body,div,p,table,tr,td,span,small,header,footer,article,aside { margin:0; padding:0; display:block; }
+
+/** Clears Floats from Parent Elements **/
+.container, .row, .grid { clear:both; }
+
+/** Adds Padding to Child of Column or Grid-Box Elements **/
+.column > div, .column > p, .column > aside, .column > table, .column > ul, .column > ol, .column > nav,
+.column > h1, .column > h2, .column > h3, .column > h4, .column > h5, .column > h6, .column > li, .column > small,
+.column > article, .column > header, .column > footer, .column > canvas, 
+.box > div, .box > p, .box > aside, .box > table, .box > ul, .box > ol, .box > nav,
+.box > h1, .box > h2, .box > h3, .box > h4, .box > h5, .box > h6, .box > li, .box > small,
+.box > article, .box > header, .box > footer, .box > canvas 
+    { padding-left:0.5rem; padding-right:0.5rem; }
+
+/** Smallest Mobile View **/
+@media (max-width: 399px) {
+    .xsmall-1  { width:6.6666%; float:left; }
+    .xsmall-2  { width:13.3333%; float:left; }
+    .xsmall-3  { width:19.9999%; float:left; }
+    .xsmall-4  { width:26.6666%; float:left; }
+    .xsmall-5  { width:33.3333%; float:left; }
+    .xsmall-6  { width:39.9999%; float:left; }
+    .xsmall-7  { width:46.6666%; float:left; }
+    .xsmall-8  { width:53.3333%; float:left; }
+    .xsmall-9  { width:59.9999%; float:left; }
+    .xsmall-10 { width:66.6666%; float:left; }
+    .xsmall-11 { width:73.3333%; float:left; }
+    .xsmall-12 { width:79.9999%; float:left; }
+    .xsmall-13 { width:86.6666%; float:left; }
+    .xsmall-14 { width:93.3333%; float:left; }
+    .xsmall-15 { width:100%; }
+}
+
+/** Small Mobile View **/
+@media (min-width: 400px) and (max-width:899px) {
+    .small-1  { width:6.6666%; float:left; }
+    .small-2  { width:13.3333%; float:left; }
+    .small-3  { width:19.9999%; float:left; }
+    .small-4  { width:26.6666%; float:left; }
+    .small-5  { width:33.3333%; float:left; }
+    .small-6  { width:39.9999%; float:left; }
+    .small-7  { width:46.6666%; float:left; }
+    .small-8  { width:53.3333%; float:left; }
+    .small-9  { width:59.9999%; float:left; }
+    .small-10 { width:66.6666%; float:left; }
+    .small-11 { width:73.3333%; float:left; }
+    .small-12 { width:79.9999%; float:left; }
+    .small-13 { width:86.6666%; float:left; }
+    .small-14 { width:93.3333%; float:left; }
+    .small-15 { width:99.9999%; }
+}
+
+/** Tablet / Laptop / Desktop View **/
+@media (min-width: 900px) and (max-width:1279px) {
+    .medium-1  { width:6.6666%; float:left; }
+    .medium-2  { width:13.3333%; float:left; }
+    .medium-3  { width:19.9999%; float:left; }
+    .medium-4  { width:26.6666%; float:left; }
+    .medium-5  { width:33.3333%; float:left; }
+    .medium-6  { width:39.9999%; float:left; }
+    .medium-7  { width:46.6666%; float:left; }
+    .medium-8  { width:53.3333%; float:left; }
+    .medium-9  { width:59.9999%; float:left; }
+    .medium-10 { width:66.6666%; float:left; }
+    .medium-11 { width:73.3333%; float:left; }
+    .medium-12 { width:79.9999%; float:left; }
+    .medium-13 { width:86.6666%; float:left; }
+    .medium-14 { width:93.3333%; float:left; }
+    .medium-15 { width:99.9999%; }
+}
+
+/** Desktop / Laptop View **/
+@media (min-width: 1280px) and (max-width:1919px) {
+    .large-1  { width:6.6666%; float:left; }
+    .large-2  { width:13.3333%; float:left; }
+    .large-3  { width:19.9999%; float:left; }
+    .large-4  { width:26.6666%; float:left; }
+    .large-5  { width:33.3333%; float:left; }
+    .large-6  { width:39.9999%; float:left; }
+    .large-7  { width:46.6666%; float:left; }
+    .large-8  { width:53.3333%; float:left; }
+    .large-9  { width:59.9999%; float:left; }
+    .large-10 { width:66.6666%; float:left; }
+    .large-11 { width:73.3333%; float:left; }
+    .large-12 { width:79.9999%; float:left; }
+    .large-13 { width:86.6666%; float:left; }
+    .large-14 { width:93.3333%; float:left; }
+    .large-15 { width:99.9999%; }
+}
+
+/** High Definition Devices **/
+@media (min-width: 1920px) {
+    .xlarge-1  { width:6.6666%; float:left; }
+    .xlarge-2  { width:13.3333%; float:left; }
+    .xlarge-3  { width:19.9999%; float:left; }
+    .xlarge-4  { width:26.6666%; float:left; }
+    .xlarge-5  { width:33.3333%; float:left; }
+    .xlarge-6  { width:39.9999%; float:left; }
+    .xlarge-7  { width:46.6666%; float:left; }
+    .xlarge-8  { width:53.3333%; float:left; }
+    .xlarge-9  { width:59.9999%; float:left; }
+    .xlarge-10 { width:66.6666%; float:left; }
+    .xlarge-11 { width:73.3333%; float:left; }
+    .xlarge-12 { width:79.9999%; float:left; }
+    .xlarge-13 { width:86.6666%; float:left; }
+    .xlarge-14 { width:93.3333%; float:left; }
+    .xlarge-15 { width:99.9999%; }
+}
