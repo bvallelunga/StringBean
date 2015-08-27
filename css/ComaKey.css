@@ -1,5 +1,8 @@
 /** Resets **/
-body,div,p,table,tr,td,span,small,header,footer,article,aside { margin:0; padding:0; display:block; }
+body,div,p,table,tr,td,span,small,header,footer,article,aside,a,input,textarea,form { margin:0; padding:0; display:block-inline; }
+
+/** Inline Elements Define **/
+p { padding-top:10px; padding-bottom:10px; }
 
 /** Clears Floats from Parent Elements **/
 .container, .row, .grid { clear:both; }
@@ -12,6 +15,18 @@ body,div,p,table,tr,td,span,small,header,footer,article,aside { margin:0; paddin
 .box > h1, .box > h2, .box > h3, .box > h4, .box > h5, .box > h6, .box > li, .box > small,
 .box > article, .box > header, .box > footer, .box > canvas 
     { padding-left:0.5rem; padding-right:0.5rem; }
+
+/** Buttons **/
+.button { line-height:40px; padding-left:15px; padding-right:15px; padding-top:10px; padding-bottom:10px; color:#fff; font-size:1rem; text-decoration:none; opacity:1; }
+.button:hover { opacity:0.8; }
+.button.small { line-height:25px; padding-left:7px; padding-right:7px; padding-top:5px; padding-bottom:5px; }
+.button.medium { line-height:30px; padding-left:12px; padding-right:12px; padding-top:7px; padding-bottom:7px; }
+.button.large { line-height:40px; padding-left:15px; padding-right:15px; padding-top:10px; padding-bottom:10px; } 
+.button.xlarge { line-height:60px; padding-left:25px; padding-right:25px; padding-top:20px; padding-bottom:20px; } 
+.button.normal { background:#000; } 
+.button.success { background:#5eae45; }
+.button.alert { background:#e01c33; }
+.button.information { background:#1a75ae; }
 
 /** Smallest Mobile View **/
 @media (max-width: 399px) {
