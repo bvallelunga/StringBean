@@ -36,65 +36,21 @@ p { padding-top:0.5rem; padding-bottom:0.5rem; } /** Give Paragraphs Top and Bot
 
 /** Smallest Mobile View **/
 @media (max-width: 399px) {
-    .xsmall-1 {
-        width: 6.6666%;
-    }
-
-    .xsmall-2 {
-        width: 13.3333%;
-    }
-
-    .xsmall-3 {
-        width: 19.9999%;
-    }
-
-    .xsmall-4 {
-        width: 26.6666%;
-    }
-
-    .xsmall-5 {
-        width: 33.3333%;
-    }
-
-    .xsmall-6 {
-        width: 39.9999%;
-    }
-
-    .xsmall-7 {
-        width: 46.6666%;
-    }
-
-    .xsmall-8 {
-        width: 53.3333%;
-    }
-
-    .xsmall-9 {
-        width: 59.9999%;
-    }
-
-    .xsmall-10 {
-        width: 66.6666%;
-    }
-
-    .xsmall-11 {
-        width: 73.3333%;
-    }
-
-    .xsmall-12 {
-        width: 79.9999%;
-    }
-
-    .xsmall-13 {
-        width: 86.6666%;
-    }
-
-    .xsmall-14 {
-        width: 93.3333%;
-    }
-
-    .xsmall-15 {
-        width: 100%;
-    }
+    .xsmall-1  { width:6.6666%; }
+    .xsmall-2  { width:13.3333%; }
+    .xsmall-3  { width:19.9999%; }
+    .xsmall-4  { width:26.6666%; }
+    .xsmall-5  { width:33.3333%; }
+    .xsmall-6  { width:39.9999%; }
+    .xsmall-7  { width:46.6666%; }
+    .xsmall-8  { width:53.3333%; }
+    .xsmall-9  { width:59.9999%; }
+    .xsmall-10 { width:66.6666%; }
+    .xsmall-11 { width:73.3333%; }
+    .xsmall-12 { width:79.9999%; }
+    .xsmall-13 { width:86.6666%; }
+    .xsmall-14 { width:93.3333%; }
+    .xsmall-15 { width:100%; }
 }
 
 /** Mobile View **/
