@@ -7,7 +7,6 @@ h1,h2,h3,h4,h5,h6 { padding:0; padding-top:1rem; margin:0; }
 /** Clears Floats from Parent Elements **/
 .container { display:block; padding-top:1rem; padding-top:1rem; }
 .row, .grid { display:block; max-width:90%; margin:auto; clear:both; }
-.grid > p, .grid > li { padding-left:0.5rem; padding-left:0.5rem; }
 
 /** Alignment **/
 .align-left { text-align:left; } .align-center { text-align:center; } .align-right { text-align:right; }
