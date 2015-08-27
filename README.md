@@ -14,7 +14,7 @@ The extra 4 break points give you greater control over the widths of content on 
         </div>
         <div class="column xsmall-15 small-15 medium-5 large-4 xlarge-3">
           <p id="Strapline">
-            Powering the internet, slowly.
+            Powering the internet, gently.
           </p>
         </div>
       </nav>
