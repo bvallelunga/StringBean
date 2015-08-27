@@ -9,7 +9,7 @@ The extra 4 break points give you greater control over the widths of content on 
       <nav class="row">
         <div class="column xsmall-15 small-15 medium-10 large-11 xlarge-12">
           <h1>
-            ComaKey
+            String Bean
           </h1>
         </div>
         <div class="column xsmall-15 small-15 medium-5 large-4 xlarge-3">
