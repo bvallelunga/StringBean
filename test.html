@@ -1,153 +1,142 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>String Bean - The Featherweight Responsive CSS Framework</title>
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link href='css/String-Bean.css' rel='stylesheet' type='text/css'>
+/** Resets **/
+body { padding:0; margin:0; }
+div,p,table,tr,td,span,small,header,footer,article,aside,a,input,textarea,form,ol,ul,li,nav,label { margin:0; padding:0; display:block-inline; overflow:hidden; box-sizing: border-box; }
+h1 {font-size:3rem;} h2 {font-size:2.5rem;} h3 {font-size:2rem;} h4 {font-size:1.5rem;} h5 {font-size:1rem;} h6 {font-size:0.75rem;}
+h1,h2,h3,h4,h5,h6 { padding:0; padding-top:1rem; margin:0; }
 
-    <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:500' rel='stylesheet' type='text/css'>
+/** Clears Floats from Parent Elements **/
+.container { display:block; padding-top:1rem; padding-top:1rem; }
+.row { display:block; max-width:90%; margin:auto; clear:both; }
+.grid { display:block; margin:auto; clear:both; }
 
-    <style type="text/css">
-        body { font-family: 'Alegreya Sans', sans-serif; }
-        #graded-bar { background:#000; }
-        #graded-bar h1 { color:#fff; padding:0; font-size:1.5rem; line-height:2rem; }
-        #Strapline { color:#fff; }
-    </style>
+/** Alignment **/
+.align-left { text-align:left; } .align-center { text-align:center; } .align-right { text-align:right; }
 
-</head>
-<body>
+/** Adds Padding to Child of Column or Grid-Box Elements **/
+.column, .box { display:block; float:left; }
+.column > div, .column > p, .column > aside, .column > table, .column > ul, .column > ol, .column > nav,
+.column > h1, .column > h2, .column > h3, .column > h4, .column > h5, .column > h6, .column > li, .column > small,
+.column > article, .column > header, .column > footer, .column > canvas, .column > img, .column > form,
+.box > div, .box > p, .box > aside, .box > table, .box > ul, .box > ol, .box > nav,
+.box > h1, .box > h2, .box > h3, .box > h4, .box > h5, .box > h6, .box > li, .box > small,
+.box > article, .box > header, .box > footer, .box > canvas, .box > img, .box > form
+    { padding-left:0.25rem; padding-right:0.25rem; }
 
-    <header class="container" id="graded-bar">
+/** Buttons **/
+.button { line-height:3.5rem; padding-left:1.5rem; padding-right:1.5rem; padding-top:0.75rem; padding-bottom:0.75rem; color:#fff; font-size:1rem; line-height:1rem; text-decoration:none; opacity:1; }
+.button + .button { margin-left:0.5rem; } /** If two buttons then pad-left the second **/
+.button:hover { opacity:0.85; }
+.button.normal { background:#000; }
+.button.success { background:#5eae45; }
+.button.alert { background:#e01c33; }
+.button.information { background:#1a75ae; }
+.button.rounded { border-radius:0.5rem; -moz-border-radius:0.5rem; -webkit-border-radius:0.5rem; }
 
-        <nav class="row">
-            <div class="column no-padding xsmall-15 small-15 medium-10 large-11 xlarge-12">
-                 <h1>
-                     String Bean
-                 </h1>
-            </div>
+/** Forms **/
+form li { margin-top:0.5rem; }
+form li > label { font-size:1rem; line-height:1.5rem; }
+form li > input { border:1px solid #ddd; background:#fafafa; padding:0.25rem; color:#555; }
 
-            <div class="column no-padding xsmall-15 small-15 medium-5 large-4 xlarge-3 align-right">
-                <small id="Strapline">
-                    Powering the internet, gently.
-                </small>
-            </div>
-        </nav>
+/** Inline Elements Define **/
+p { padding-top:0.5rem; padding-bottom:0.5rem; } /** Give Paragraphs Top and Bottom Spacing **/
+.no-padding { padding:0 0 0 0; } .no-margin { margin:0 0 0 0; }  /** Padding and Margin Modifiers **/
+pre { background:#f5f5f5; border:1px solid #ddd; padding:5px; overflow:auto; } /** PRE & CODE formatting **/
 
-    </header>
-
-    <!-- Main Content -->
-    <article class="container row">
-
-        <div class="column xsmall-15 small-15 medium-9 large-10 xlarge-11">
-
-            <h1>String Bean</h1>
-
-            <p>
-                The featherweight responsive CSS Framework based on a 16-point system, rhather than the traditional 12-point system that other frameworks use.
-            </p>
-
-            <p>
-                The extra 4 break points give you greater control over the widths of content on your site.  Sometimes 12 is just too few, especially on a high resolution screen, such as 4K - at 4K String Bean comes into its own!
-            </p>
-
-
-
-            <h4>Simple Header Layout</h4>
-
-<pre><code>&lt;header class="container"&gt;
-    &lt;nav class="row"&gt;
-        &lt;div class="column xsmall-15 small-15 medium-10 large-11 xlarge-12"&gt;
-            &lt;h1&gt;
-                String Bean
-            &lt;/h1&gt;
-        &lt;/div&gt;
-        &lt;div class="column xsmall-15 small-15 medium-5 large-4 xlarge-3"&gt;
-            &lt;p id="Strapline"&gt;
-                Powering the internet, gently.
-            &lt;/p&gt;
-        &lt;/div&gt;
-    &lt;/nav&gt;
-&lt;/header&gt;
-</code></pre>
-
-
-            <h4>Buttons</h4>
-
-<pre><code>&lt;a href="/login" class="button normal information"&gt;Login&lt;/a&gt;
-&lt;a href="/login" class="button normal alert"&gt;Register&lt;/a&gt;</code></pre>
-
-
-            <h4>Grid</h4>
-
-<pre><code>&lt;div class="grid"&gt;
-    &lt;li class="box xsmall-15 small-15 medium-7 large-5 xlarge-3"&gt;
-        Box #1
-    &lt;/li&gt;
-    &lt;li class="box xsmall-15 small-15 medium-7 large-5 xlarge-3"&gt;
-        Box #2
-    &lt;/li&gt;
-    &lt;li class="box xsmall-15 small-15 medium-7 large-5 xlarge-3"&gt;
-        Box #3
-    &lt;/li&gt;
-&lt;/div&gt;</code></pre>
-
-            <p>As simple as that!.</p>
-
-        </div>
-
-        <!-- Right Menu -->
-        <aside class="column xsmall-15 small-15 medium-6 large-5 xlarge-4">
-
-            <p>
-                <h3>Some pictures of string beans...</h3>
-            </p>
-
-            <ol class="grid">
-
-                <li class="box xsmall-15 small-15 medium-5 large-5 xlarge-5 align-center">
-                    <img src="img/8.jpg" alt="" class="full-15" />
-                </li>
-
-                <li class="box xsmall-15 small-15 medium-5 large-5 xlarge-5 align-center">
-                    <img src="img/1.jpg" alt="" class="full-15" />
-                </li>
-
-                <li class="box xsmall-15 small-15 medium-5 large-5 xlarge-5 align-center">
-                    <img src="img/2.jpg" alt="" class="full-15" />
-                </li>
-
-                <li class="box xsmall-15 small-15 medium-5 large-5 xlarge-5 align-center">
-                    <img src="img/4.jpg" alt="" class="full-15" />
-                </li>
-
-                <li class="box xsmall-15 small-15 medium-5 large-5 xlarge-5 align-center">
-                    <img src="img/5.jpg" alt="" class="full-15" />
-                </li>
-
-                <li class="box xsmall-15 small-15 medium-5 large-5 xlarge-5 align-center">
-                    <img src="img/6.jpg" alt="" class="full-15" />
-                </li>
-
-                <li class="box xsmall-15 small-15 medium-5 large-5 xlarge-5 align-center">
-                    <img src="img/7.jpg" alt="" class="full-15" />
-                </li>
-
-                <li class="box xsmall-15 small-15 medium-5 large-5 xlarge-5 align-center">
-                    <img src="img/9.jpg" alt="" class="full-15" />
-                </li>
-
-                <li class="box xsmall-15 small-15 medium-5 large-5 xlarge-5 align-center">
-                    <img src="img/12.jpg" alt="" class="full-15" />
-                </li>
-
-            </ol>
-
-        </aside>
-
-    </article>
-
-</body>
-</html>
+@media screen and (max-width: 399px) {    /** Smallest Mobile View **/
+    .xsmall-1  { width:6.25%;  } .column + .xsmall-1 { width:6.0%; margin-left:1.25%; }
+    .xsmall-2  { width:12.50%; } .column + .xsmall-2 { width:11.0%; margin-left:1.50%; }
+    .xsmall-3  { width:18.75%; } .column + .xsmall-3 { width:17.25%; margin-left:1.50%; }
+    .xsmall-4  { width:25.00%; } .column + .xsmall-4 { width:23.50%; margin-left:1.50%; }
+    .xsmall-5  { width:31.25%; } .column + .xsmall-5 { width:29.75%; margin-left:1.50%; }
+    .xsmall-6  { width:37.50%; } .column + .xsmall-6 { width:36.00%; margin-left:1.5%; }
+    .xsmall-7  { width:43.75%; } .column + .xsmall-7 { width:42.25%; margin-left:1.5%; }
+    .xsmall-8  { width:50.00%; } .column + .xsmall-8 { width:48.50%; margin-left:1.5%; }
+    .xsmall-9  { width:56.25%; } .column + .xsmall-9 { width:54.75%; margin-left:1.5%; }
+    .xsmall-10 { width:62.50%; } .column + .xsmall-10 { width:61.00%; margin-left:1.5%; }
+    .xsmall-11 { width:68.75%; } .column + .xsmall-11 { width:67.25%; margin-left:1.5%; }
+    .xsmall-12 { width:75.00%; } .column + .xsmall-12 { width:73.50%; margin-left:1.5%; }
+    .xsmall-13 { width:81.25%; } .column + .xsmall-13 { width:79.75%; margin-left:1.5%; }
+    .xsmall-14 { width:87.50%; } .column + .xsmall-14 { width:86.00%; margin-left:1.5%; }
+    .xsmall-15 { width:93.75%; } .column + .xsmall-15 { width:92.25%; margin-left:1.5%; }
+    .xsmall-16, .full-16 { width:99.99%; }
+    .hide-below-small, .hide-below-medium, .hide-below-large, .hide-below-xlarge { display:none; }  /** Hide elements below certain points **/
+    .show-below-small, .show-below-medium, .show-below-large, .show-below-xlarge { display:block-inline; }  /** Show elements only below certain points **/
+}
+@media (min-width: 400px) and (max-width:799px) {    /** Mobile View **/
+    .small-1  { width:6.25%;  } .column + .small-1 { width:6.0%; margin-left:1.25%; }
+    .small-2  { width:12.50%; } .column + .small-2 { width:11.0%; margin-left:1.50%; }
+    .small-3  { width:18.75%; } .column + .small-3 { width:17.25%; margin-left:1.50%; }
+    .small-4  { width:25.00%; } .column + .small-4 { width:23.50%; margin-left:1.50%; }
+    .small-5  { width:31.25%; } .column + .small-5 { width:29.75%; margin-left:1.50%; }
+    .small-6  { width:37.50%; } .column + .small-6 { width:36.00%; margin-left:1.5%; }
+    .small-7  { width:43.75%; } .column + .small-7 { width:42.25%; margin-left:1.5%; }
+    .small-8  { width:50.00%; } .column + .small-8 { width:48.50%; margin-left:1.5%; }
+    .small-9  { width:56.25%; } .column + .small-9 { width:54.75%; margin-left:1.5%; }
+    .small-10 { width:62.50%; } .column + .small-10 { width:61.00%; margin-left:1.5%; }
+    .small-11 { width:68.75%; } .column + .small-11 { width:67.25%; margin-left:1.5%; }
+    .small-12 { width:75.00%; } .column + .small-12 { width:73.50%; margin-left:1.5%; }
+    .small-13 { width:81.25%; } .column + .small-13 { width:79.75%; margin-left:1.5%; }
+    .small-14 { width:87.50%; } .column + .small-14 { width:86.00%; margin-left:1.5%; }
+    .small-15 { width:93.75%; } .column + .small-15 { width:92.25%; margin-left:1.5%; }
+    .small-16, .full-16 { width:99.99%; }
+    .hide-below-medium, .hide-below-large, .hide-below-xlarge { display:none; }  /** Hide elements below certain points **/
+    .show-below-medium, .show-below-large, .show-below-xlarge { display:block-inline; } .show-below-small { display:none; }  /** Show elements only below certain points **/
+}
+@media (min-width: 800px) and (max-width:1279px) {    /** Tablet / Laptop / Desktop View **/
+    .medium-1  { width:6.25%;  } .column + .medium-1 { width:6.0%; margin-left:1.25%; }
+    .medium-2  { width:12.50%; } .column + .medium-2 { width:11.0%; margin-left:1.50%; }
+    .medium-3  { width:18.75%; } .column + .medium-3 { width:17.25%; margin-left:1.50%; }
+    .medium-4  { width:25.00%; } .column + .medium-4 { width:23.50%; margin-left:1.50%; }
+    .medium-5  { width:31.25%; } .column + .medium-5 { width:29.75%; margin-left:1.50%; }
+    .medium-6  { width:37.50%; } .column + .medium-6 { width:36.00%; margin-left:1.5%; }
+    .medium-7  { width:43.75%; } .column + .medium-7 { width:42.25%; margin-left:1.5%; }
+    .medium-8  { width:50.00%; } .column + .medium-8 { width:48.50%; margin-left:1.5%; }
+    .medium-9  { width:56.25%; } .column + .medium-9 { width:54.75%; margin-left:1.5%; }
+    .medium-10 { width:62.50%; } .column + .medium-10 { width:61.00%; margin-left:1.5%; }
+    .medium-11 { width:68.75%; } .column + .medium-11 { width:67.25%; margin-left:1.5%; }
+    .medium-12 { width:75.00%; } .column + .medium-12 { width:73.50%; margin-left:1.5%; }
+    .medium-13 { width:81.25%; } .column + .medium-13 { width:79.75%; margin-left:1.5%; }
+    .medium-14 { width:87.50%; } .column + .medium-14 { width:86.00%; margin-left:1.5%; }
+    .medium-15 { width:93.75%; } .column + .medium-15 { width:92.25%; margin-left:1.5%; }
+    .medium-16, .full-16 { width:99.99%; }
+    .hide-below-large, .hide-below-xlarge { display:none; }  /** Hide elements below certain points **/
+    .show-below-large, .show-below-xlarge { display:block-inline; } .show-below-small, .show-below-medium { display:none; }  /** Show elements only below certain points **/
+}
+@media (min-width: 1280px) and (max-width:1919px) {    /** Desktop / Laptop View **/
+    .large-1  { width:6.25%;  } .column + .large-1 { width:6.0%; margin-left:1.25%; }
+    .large-2  { width:12.50%; } .column + .large-2 { width:11.0%; margin-left:1.50%; }
+    .large-3  { width:18.75%; } .column + .large-3 { width:17.25%; margin-left:1.50%; }
+    .large-4  { width:25.00%; } .column + .large-4 { width:23.50%; margin-left:1.50%; }
+    .large-5  { width:31.25%; } .column + .large-5 { width:29.75%; margin-left:1.50%; }
+    .large-6  { width:37.50%; } .column + .large-6 { width:36.00%; margin-left:1.5%; }
+    .large-7  { width:43.75%; } .column + .large-7 { width:42.25%; margin-left:1.5%; }
+    .large-8  { width:50.00%; } .column + .large-8 { width:48.50%; margin-left:1.5%; }
+    .large-9  { width:56.25%; } .column + .large-9 { width:54.75%; margin-left:1.5%; }
+    .large-10 { width:62.50%; } .column + .large-10 { width:61.00%; margin-left:1.5%; }
+    .large-11 { width:68.75%; } .column + .large-11 { width:67.25%; margin-left:1.5%; }
+    .large-12 { width:75.00%; } .column + .large-12 { width:73.50%; margin-left:1.5%; }
+    .large-13 { width:81.25%; } .column + .large-13 { width:79.75%; margin-left:1.5%; }
+    .large-14 { width:87.50%; } .column + .large-14 { width:86.00%; margin-left:1.5%; }
+    .large-15 { width:93.75%; } .column + .large-15 { width:92.25%; margin-left:1.5%; }
+    .large-16, .full-16 { width:99.99%; }
+    .hide-below-xlarge { display:none; }  /** Hide elements below certain points **/
+    .show-below-xlarge { display:block-inline; } .show-below-small, .show-below-medium, .show-below-large { display:none; }  /** Show elements only below certain points **/
+}
+@media (min-width: 1920px) {    /** High Definition Devices **/
+    .xlarge-1  { width:6.25%;  } .column + .xlarge-1 { width:6.0%; margin-left:1.25%; }
+    .xlarge-2  { width:12.50%; } .column + .xlarge-2 { width:11.0%; margin-left:1.50%; }
+    .xlarge-3  { width:18.75%; } .column + .xlarge-3 { width:17.25%; margin-left:1.50%; }
+    .xlarge-4  { width:25.00%; } .column + .xlarge-4 { width:23.50%; margin-left:1.50%; }
+    .xlarge-5  { width:31.25%; } .column + .xlarge-5 { width:29.75%; margin-left:1.50%; }
+    .xlarge-6  { width:37.50%; } .column + .xlarge-6 { width:36.00%; margin-left:1.5%; }
+    .xlarge-7  { width:43.75%; } .column + .xlarge-7 { width:42.25%; margin-left:1.5%; }
+    .xlarge-8  { width:50.00%; } .column + .xlarge-8 { width:48.50%; margin-left:1.5%; }
+    .xlarge-9  { width:56.25%; } .column + .xlarge-9 { width:54.75%; margin-left:1.5%; }
+    .xlarge-10 { width:62.50%; } .column + .xlarge-10 { width:61.00%; margin-left:1.5%; }
+    .xlarge-11 { width:68.75%; } .column + .xlarge-11 { width:67.25%; margin-left:1.5%; }
+    .xlarge-12 { width:75.00%; } .column + .xlarge-12 { width:73.50%; margin-left:1.5%; }
+    .xlarge-13 { width:81.25%; } .column + .xlarge-13 { width:79.75%; margin-left:1.5%; }
+    .xlarge-14 { width:87.50%; } .column + .xlarge-14 { width:86.00%; margin-left:1.5%; }
+    .xlarge-15 { width:93.75%; } .column + .xlarge-15 { width:92.25%; margin-left:1.5%; }
+    .xlarge-16, .full-16 { width:99.99%; }
+}
