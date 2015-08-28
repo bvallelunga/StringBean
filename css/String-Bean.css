@@ -1,0 +1,136 @@
+/** Resets **/
+body { padding:0; margin:0; }
+div,p,table,tr,td,span,small,header,footer,article,aside,a,input,textarea,form,ol,ul,li,nav { margin:0; padding:0; display:block-inline; overflow:hidden; }
+h1 {font-size:3rem;} h2 {font-size:2.5rem;} h3 {font-size:2rem;} h4 {font-size:1.5rem;} h5 {font-size:1rem;} h6 {font-size:0.75rem;}
+h1,h2,h3,h4,h5,h6 { padding:0; padding-top:1rem; margin:0; }
+
+/** Clears Floats from Parent Elements **/
+.container { display:block; padding-top:1rem; padding-top:1rem; }
+.row, .grid { display:block; max-width:90%; margin:auto; clear:both; }
+
+/** Alignment **/
+.align-left { text-align:left; } .align-center { text-align:center; } .align-right { text-align:right; }
+
+/** Adds Padding to Child of Column or Grid-Box Elements **/
+.column, .box { display:block; float:left; }
+.column > div, .column > p, .column > aside, .column > table, .column > ul, .column > ol, .column > nav,
+.column > h1, .column > h2, .column > h3, .column > h4, .column > h5, .column > h6, .column > li, .column > small,
+.column > article, .column > header, .column > footer, .column > canvas, .column > img,
+.box > div, .box > p, .box > aside, .box > table, .box > ul, .box > ol, .box > nav,
+.box > h1, .box > h2, .box > h3, .box > h4, .box > h5, .box > h6, .box > li, .box > small,
+.box > article, .box > header, .box > footer, .box > canvas, .box > img
+    { padding-left:0.25rem; padding-right:0.25rem; }
+
+/** Buttons **/
+.button { line-height:3.5rem; padding-left:1.5rem; padding-right:1.5rem; padding-top:0.75rem; padding-bottom:0.75rem; color:#fff; font-size:1rem; text-decoration:none; opacity:1; }
+.button + .button { margin-left:0.5rem; } /** If two buttons then pad-left the second **/
+.button:hover { opacity:0.85; }
+.button.normal { background:#000; }
+.button.success { background:#5eae45; }
+.button.alert { background:#e01c33; }
+.button.information { background:#1a75ae; }
+.button.rounded { border-radius:0.5rem; -moz-border-radius:0.5rem; -webkit-border-radius:0.5rem; }
+
+/** Inline Elements Define **/
+p { padding-top:0.5rem; padding-bottom:0.5rem; } /** Give Paragraphs Top and Bottom Spacing **/
+.no-padding { padding:0 0 0 0; } .no-margin { margin:0 0 0 0; }  /** Padding and Margin Modifiers **/
+pre { background:#f5f5f5; border:1px solid #ddd; padding:5px; overflow:auto; } /** PRE & CODE formatting **/
+
+@media screen and (max-width: 399px) {    /** Smallest Mobile View **/
+    .xsmall-1  { width:6.25%; }
+    .xsmall-2  { width:12.50%; }
+    .xsmall-3  { width:18.75%; }
+    .xsmall-4  { width:25.00%; }
+    .xsmall-5  { width:31.25%; }
+    .xsmall-6  { width:37.5%; }
+    .xsmall-7  { width:43.75%; }
+    .xsmall-8  { width:50.00%; }
+    .xsmall-9  { width:56.25%; }
+    .xsmall-10 { width:62.50%; }
+    .xsmall-11 { width:68.75%; }
+    .xsmall-12 { width:75.00%; }
+    .xsmall-13 { width:81.25%; }
+    .xsmall-14 { width:87.50%; }
+    .xsmall-14 { width:93.75%; }
+    .xsmall-16, .full-16 { width:100.00%; }
+    .hide-below-small, .hide-below-medium, .hide-below-large, .hide-below-xlarge { display:none; }  /** Hide elements below certain points **/
+    .show-below-small, .show-below-medium, .show-below-large, .show-below-xlarge { display:block-inline; }  /** Show elements only below certain points **/
+}
+@media (min-width: 400px) and (max-width:799px) {    /** Mobile View **/
+    .small-1  { width:6.25%; }
+    .small-2  { width:12.50%; }
+    .small-3  { width:18.75%; }
+    .small-4  { width:25.00%; }
+    .small-5  { width:31.25%; }
+    .small-6  { width:37.5%; }
+    .small-7  { width:43.75%; }
+    .small-8  { width:50.00%; }
+    .small-9  { width:56.25%; }
+    .small-10 { width:62.50%; }
+    .small-11 { width:68.75%; }
+    .small-12 { width:75.00%; }
+    .small-13 { width:81.25%; }
+    .small-14 { width:87.50%; }
+    .small-14 { width:93.75%; }
+    .small-16, .full-16 { width:100.00%; }
+    .hide-below-medium, .hide-below-large, .hide-below-xlarge { display:none; }  /** Hide elements below certain points **/
+    .show-below-medium, .show-below-large, .show-below-xlarge { display:block-inline; } .show-below-small { display:none; }  /** Show elements only below certain points **/
+}
+@media (min-width: 800px) and (max-width:1279px) {    /** Tablet / Laptop / Desktop View **/
+    .medium-1  { width:6.25%; }
+    .medium-2  { width:12.50%; }
+    .medium-3  { width:18.75%; }
+    .medium-4  { width:25.00%; }
+    .medium-5  { width:31.25%; }
+    .medium-6  { width:37.5%; }
+    .medium-7  { width:43.75%; }
+    .medium-8  { width:50.00%; }
+    .medium-9  { width:56.25%; }
+    .medium-10 { width:62.50%; }
+    .medium-11 { width:68.75%; }
+    .medium-12 { width:75.00%; }
+    .medium-13 { width:81.25%; }
+    .medium-14 { width:87.50%; }
+    .medium-14 { width:93.75%; }
+    .medium-16, .full-16 { width:100.00%; }
+    .hide-below-large, .hide-below-xlarge { display:none; }  /** Hide elements below certain points **/
+    .show-below-large, .show-below-xlarge { display:block-inline; } .show-below-small, .show-below-medium { display:none; }  /** Show elements only below certain points **/
+}
+@media (min-width: 1280px) and (max-width:1919px) {    /** Desktop / Laptop View **/
+    .large-1  { width:6.25%; }
+    .large-2  { width:12.50%; }
+    .large-3  { width:18.75%; }
+    .large-4  { width:25.00%; }
+    .large-5  { width:31.25%; }
+    .large-6  { width:37.5%; }
+    .large-7  { width:43.75%; }
+    .large-8  { width:50.00%; }
+    .large-9  { width:56.25%; }
+    .large-10 { width:62.50%; }
+    .large-11 { width:68.75%; }
+    .large-12 { width:75.00%; }
+    .large-13 { width:81.25%; }
+    .large-14 { width:87.50%; }
+    .large-14 { width:93.75%; }
+    .large-16, .full-16 { width:100.00%; }
+    .hide-below-xlarge { display:none; }  /** Hide elements below certain points **/
+    .show-below-xlarge { display:block-inline; } .show-below-small, .show-below-medium, .show-below-large { display:none; }  /** Show elements only below certain points **/
+}
+@media (min-width: 1920px) {    /** High Definition Devices **/
+    .xlarge-1  { width:6.25%; }
+    .xlarge-2  { width:12.50%; }
+    .xlarge-3  { width:18.75%; }
+    .xlarge-4  { width:25.00%; }
+    .xlarge-5  { width:31.25%; }
+    .xlarge-6  { width:37.5%; }
+    .xlarge-7  { width:43.75%; }
+    .xlarge-8  { width:50.00%; }
+    .xlarge-9  { width:56.25%; }
+    .xlarge-10 { width:62.50%; }
+    .xlarge-11 { width:68.75%; }
+    .xlarge-12 { width:75.00%; }
+    .xlarge-13 { width:81.25%; }
+    .xlarge-14 { width:87.50%; }
+    .xlarge-14 { width:93.75%; }
+    .xlarge-16, .full-16 { width:100.00%; }
+}
