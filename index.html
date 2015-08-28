@@ -2,10 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>String Bean - The Featherweight Responsive CSS Framework</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <link href='css/String-Bean.css' rel='stylesheet' type='text/css'>
+
     <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:500' rel='stylesheet' type='text/css'>
 
     <style type="text/css">
@@ -15,30 +21,19 @@
         #Strapline { color:#fff; }
     </style>
 
-    <script type="text/javascript">
-        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-    </script>
-    <script type="text/javascript">
-        try {
-            var pageTracker = _gat._getTracker("UA-66609583-2");
-            pageTracker._trackPageview();
-        } catch(err) {}
-    </script>
-
 </head>
 <body>
 
     <header class="container" id="graded-bar">
 
         <nav class="row">
-            <div class="column no-padding xsmall-15 small-15 medium-10 large-11 xlarge-12">
+            <div class="column no-padding xsmall-16 small-16 medium-10 large-11 xlarge-12">
                  <h1>
                      String Bean
                  </h1>
             </div>
 
-            <div class="column no-padding xsmall-15 small-15 medium-5 large-4 xlarge-3 align-right">
+            <div class="column no-padding xsmall-16 small-16 medium-6 large-5 xlarge-4 align-right">
                 <small id="Strapline">
                     Powering the internet, gently.
                 </small>
@@ -50,7 +45,7 @@
     <!-- Main Content -->
     <article class="container row">
 
-        <div class="column xsmall-15 small-15 medium-9 large-10 xlarge-11">
+        <div class="column xsmall-16 small-16 medium-10 large-11 xlarge-12">
 
             <h1>String Bean</h1>
 
@@ -68,12 +63,12 @@
 
 <pre><code>&lt;header class="container"&gt;
     &lt;nav class="row"&gt;
-        &lt;div class="column xsmall-15 small-15 medium-10 large-11 xlarge-12"&gt;
+        &lt;div class="column xsmall-16 small-16 medium-10 large-11 xlarge-12"&gt;
             &lt;h1&gt;
                 String Bean
             &lt;/h1&gt;
         &lt;/div&gt;
-        &lt;div class="column xsmall-15 small-15 medium-5 large-4 xlarge-3"&gt;
+        &lt;div class="column xsmall-16 small-16 medium-6 large-5 xlarge-4"&gt;
             &lt;p id="Strapline"&gt;
                 Powering the internet, gently.
             &lt;/p&gt;
@@ -92,13 +87,13 @@
             <h4>Grid</h4>
 
 <pre><code>&lt;div class="grid"&gt;
-    &lt;li class="box xsmall-15 small-15 medium-7 large-5 xlarge-3"&gt;
+    &lt;li class="box xsmall-16 small-16 medium-8 large-4 xlarge-4"&gt;
         Box #1
     &lt;/li&gt;
-    &lt;li class="box xsmall-15 small-15 medium-7 large-5 xlarge-3"&gt;
+    &lt;li class="box xsmall-16 small-16 medium-8 large-4 xlarge-4"&gt;
         Box #2
     &lt;/li&gt;
-    &lt;li class="box xsmall-15 small-15 medium-7 large-5 xlarge-3"&gt;
+    &lt;li class="box xsmall-16 small-16 medium-8 large-4 xlarge-4"&gt;
         Box #3
     &lt;/li&gt;
 &lt;/div&gt;</code></pre>
@@ -108,7 +103,7 @@
         </div>
 
         <!-- Right Menu -->
-        <aside class="column no-padding xsmall-15 small-15 medium-6 large-5 xlarge-4">
+        <aside class="column medium-6 large-5 xlarge-4 hide-below-medium">
 
             <p>
                 <h3>Some pictures of string beans...</h3>
@@ -116,40 +111,40 @@
 
             <ol class="grid">
 
-                <li class="box xsmall-15 small-15 medium-5 large-5 xlarge-5 align-center">
-                    <img src="img/8.jpg" alt="" class="full-15" />
+                <li class="box medium-8 large-4 xlarge-4 align-center">
+                    <img src="img/8.jpg" alt="" class="full-16" />
                 </li>
 
-                <li class="box xsmall-15 small-15 medium-5 large-5 xlarge-5 align-center">
-                    <img src="img/1.jpg" alt="" class="full-15" />
+                <li class="box medium-8 large-4 xlarge-4 align-center">
+                    <img src="img/1.jpg" alt="" class="full-16" />
                 </li>
 
-                <li class="box xsmall-15 small-15 medium-5 large-5 xlarge-5 align-center">
-                    <img src="img/2.jpg" alt="" class="full-15" />
+                <li class="box medium-8 large-4 xlarge-4 align-center">
+                    <img src="img/2.jpg" alt="" class="full-16" />
                 </li>
 
-                <li class="box xsmall-15 small-15 medium-5 large-5 xlarge-5 align-center">
-                    <img src="img/4.jpg" alt="" class="full-15" />
+                <li class="box medium-8 large-4 xlarge-4 align-center">
+                    <img src="img/4.jpg" alt="" class="full-16" />
                 </li>
 
-                <li class="box xsmall-15 small-15 medium-5 large-5 xlarge-5 align-center">
-                    <img src="img/5.jpg" alt="" class="full-15" />
+                <li class="box medium-8 large-4 xlarge-4 align-center">
+                    <img src="img/5.jpg" alt="" class="full-16" />
                 </li>
 
-                <li class="box xsmall-15 small-15 medium-5 large-5 xlarge-5 align-center">
-                    <img src="img/6.jpg" alt="" class="full-15" />
+                <li class="box medium-8 large-4 xlarge-4 align-center">
+                    <img src="img/6.jpg" alt="" class="full-16" />
                 </li>
 
-                <li class="box xsmall-15 small-15 medium-5 large-5 xlarge-5 align-center">
-                    <img src="img/7.jpg" alt="" class="full-15" />
+                <li class="box medium-8 large-4 xlarge-4 align-center">
+                    <img src="img/7.jpg" alt="" class="full-16" />
                 </li>
 
-                <li class="box xsmall-15 small-15 medium-5 large-5 xlarge-5 align-center">
-                    <img src="img/9.jpg" alt="" class="full-15" />
+                <li class="box medium-8 large-4 xlarge-4 align-center">
+                    <img src="img/9.jpg" alt="" class="full-16" />
                 </li>
 
-                <li class="box xsmall-15 small-15 medium-5 large-5 xlarge-5 align-center">
-                    <img src="img/12.jpg" alt="" class="full-15" />
+                <li class="box medium-8 large-4 xlarge-4 align-center">
+                    <img src="img/12.jpg" alt="" class="full-16" />
                 </li>
 
             </ol>
@@ -157,142 +152,9 @@
         </aside>
 
     </article>
-
-<style type="text/css">
-    /** Resets **/
-    body { padding:0; margin:0; }
-    div,p,table,tr,td,span,small,header,footer,article,aside,a,input,textarea,form,ol,ul,li,nav { margin:0; padding:0; display:block-inline; overflow:hidden; }
-    h1 {font-size:3rem;} h2 {font-size:2.5rem;} h3 {font-size:2rem;} h4 {font-size:1.5rem;} h5 {font-size:1rem;} h6 {font-size:0.75rem;}
-    h1,h2,h3,h4,h5,h6 { padding:0; padding-top:1rem; margin:0; }
-
-    /** Clears Floats from Parent Elements **/
-    .container { display:block; padding-top:1rem; padding-top:1rem; }
-    .row { display:block; max-width:90%; margin:auto; clear:both; }
-
-    /** Alignment **/
-    .align-left { text-align:left; } .align-center { text-align:center; } .align-right { text-align:right; }
-
-    /** Adds Padding to Child of Column or Grid-Box Elements **/
-    .column, .box { display:block; float:left; }
-    .column > div, .column > p, .column > aside, .column > table, .column > ul, .column > ol, .column > nav,
-    .column > h1, .column > h2, .column > h3, .column > h4, .column > h5, .column > h6, .column > li, .column > small,
-    .column > article, .column > header, .column > footer, .column > canvas, .column > img,
-    .box > div, .box > p, .box > aside, .box > table, .box > ul, .box > ol, .box > nav,
-    .box > h1, .box > h2, .box > h3, .box > h4, .box > h5, .box > h6, .box > li, .box > small,
-    .box > article, .box > header, .box > footer, .box > canvas, .box > img
-    { padding-left:0rem; padding-right:0rem; }
-
-    /** Buttons **/
-    .button { line-height:3.5rem; padding-left:1.5rem; padding-right:1.5rem; padding-top:0.75rem; padding-bottom:0.75rem; color:#fff; font-size:1rem; text-decoration:none; opacity:1; }
-    .button + .button { margin-left:0.5rem; } /** If two buttons then pad-left the second **/
-    .button:hover { opacity:0.85; }
-    .button.normal { background:#000; }
-    .button.success { background:#5eae45; }
-    .button.alert { background:#e01c33; }
-    .button.information { background:#1a75ae; }
-    .button.rounded { border-radius:0.5rem; -moz-border-radius:0.5rem; -webkit-border-radius:0.5rem; }
-
-    /** Inline Elements Define **/
-    p { padding-top:0.5rem; padding-bottom:0.5rem; } /** Give Paragraphs Top and Bottom Spacing **/
-    .no-padding { padding:0 0 0 0; } .no-margin { margin:0 0 0 0; }  /** Padding and Margin Modifiers **/
-    pre { background:#f5f5f5; border:1px solid #ddd; padding:5px; overflow:auto; } /** PRE & CODE formatting **/
-
-
-    /** Smallest Mobile View **/
-    @media (max-width: 399px) {
-        .xsmall-1  { width:6.6666%; }
-        .xsmall-2  { width:13.3333%; }
-        .xsmall-3  { width:19.9999%; }
-        .xsmall-4  { width:26.6666%; }
-        .xsmall-5  { width:33.3333%; }
-        .xsmall-6  { width:39.9999%; }
-        .xsmall-7  { width:46.6666%; }
-        .xsmall-8  { width:53.3333%; }
-        .xsmall-9  { width:59.9999%; }
-        .xsmall-10 { width:66.6666%; }
-        .xsmall-11 { width:73.3333%; }
-        .xsmall-12 { width:79.9999%; }
-        .xsmall-13 { width:86.6666%; }
-        .xsmall-14 { width:93.3333%; }
-        .xsmall-15, .full-15 { width:99.9999%; }
-    }
-
-    /** Mobile View **/
-    @media (min-width: 400px) and (max-width:799px) {
-        .small-1  { width:6.6666%; }
-        .small-2  { width:13.3333%; }
-        .small-3  { width:19.9999%; }
-        .small-4  { width:26.6666%; }
-        .small-5  { width:33.3333%; }
-        .small-6  { width:39.9999%; }
-        .small-7  { width:46.6666%; }
-        .small-8  { width:53.3333%; }
-        .small-9  { width:59.9999%; }
-        .small-10 { width:66.6666%; }
-        .small-11 { width:73.3333%; }
-        .small-12 { width:79.9999%; }
-        .small-13 { width:86.6666%; }
-        .small-14 { width:93.3333%; }
-        .small-15, .full-15 { width:99.9999%; }
-    }
-
-    /** Tablet / Laptop / Desktop View **/
-    @media (min-width: 800px) and (max-width:1279px) {
-        .medium-1  { width:6.6666%; }
-        .medium-2  { width:13.3333%; }
-        .medium-3  { width:19.9999%; }
-        .medium-4  { width:26.6666%; }
-        .medium-5  { width:33.3333%; }
-        .medium-6  { width:39.9999%; }
-        .medium-7  { width:46.6666%; }
-        .medium-8  { width:53.3333%; }
-        .medium-9  { width:59.9999%; }
-        .medium-10 { width:66.6666%; }
-        .medium-11 { width:73.3333%; }
-        .medium-12 { width:79.9999%; }
-        .medium-13 { width:86.6666%; }
-        .medium-14 { width:93.3333%; }
-        .medium-15, .full-15 { width:99.9999%; }
-    }
-
-    /** Desktop / Laptop View **/
-    @media (min-width: 1280px) and (max-width:1919px) {
-        .large-1  { width:6.6666%; }
-        .large-2  { width:13.3333%; }
-        .large-3  { width:19.9999%; }
-        .large-4  { width:26.6666%; }
-        .large-5  { width:33.3333%; }
-        .large-6  { width:39.9999%; }
-        .large-7  { width:46.6666%; }
-        .large-8  { width:53.3333%; }
-        .large-9  { width:59.9999%; }
-        .large-10 { width:66.6666%; }
-        .large-11 { width:73.3333%; }
-        .large-12 { width:79.9999%; }
-        .large-13 { width:86.6666%; }
-        .large-14 { width:93.3333%; }
-        .large-15, .full-15 { width:99.9999%; }
-    }
-
-    /** High Definition Devices **/
-    @media (min-width: 1920px) {
-        .xlarge-1  { width:6.6666%; }
-        .xlarge-2  { width:13.3333%; }
-        .xlarge-3  { width:19.9999%; }
-        .xlarge-4  { width:26.6666%; }
-        .xlarge-5  { width:33.3333%; }
-        .xlarge-6  { width:39.9999%; }
-        .xlarge-7  { width:46.6666%; }
-        .xlarge-8  { width:53.3333%; }
-        .xlarge-9  { width:59.9999%; }
-        .xlarge-10 { width:66.6666%; }
-        .xlarge-11 { width:73.3333%; }
-        .xlarge-12 { width:79.9999%; }
-        .xlarge-13 { width:86.6666%; }
-        .xlarge-14 { width:93.3333%; }
-        .xlarge-15, .full-15 { width:99.9999%; }
-    }
-</style>
+    
+    <script src="js/matchmedia.polyfill.js"></script>
+    <script src="js/Respond.js"></script>
 
 </body>
 </html>
