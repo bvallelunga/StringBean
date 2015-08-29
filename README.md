@@ -9,12 +9,12 @@ The extra 4 break points give you greater control over the widths of content on 
 
     <header class="container">
       <nav class="row">
-        <div class="column xsmall-15 small-15 medium-10 large-11 xlarge-12">
+        <div class="column xsmall-16 small-16 medium-10 large-11 xlarge-12">
           <h1>
             String Bean
           </h1>
         </div>
-        <div class="column xsmall-15 small-15 medium-5 large-4 xlarge-3">
+        <div class="column xsmall-16 small-16 medium-5 large-4 xlarge-3">
           <p id="Strapline">
             Powering the internet, gently.
           </p>
@@ -30,15 +30,15 @@ The extra 4 break points give you greater control over the widths of content on 
 #### Grid
 
     <div class="grid">
-        <li class="box xsmall-15 small-15 medium-7 large-5 xlarge-3">
+        <li class="box xsmall-16 small-16 medium-7 large-5 xlarge-3">
             Box #1
         </li>
         
-        <li class="box xsmall-15 small-15 medium-7 large-5 xlarge-3">
+        <li class="box xsmall-16 small-16 medium-7 large-5 xlarge-3">
             Box #2
         </li>
         
-        <li class="box xsmall-15 small-15 medium-7 large-5 xlarge-3">
+        <li class="box xsmall-16 small-16 medium-7 large-5 xlarge-3">
             Box #3
         </li>
     </div>
