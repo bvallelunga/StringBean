@@ -31,7 +31,7 @@ input.button { padding:0; margin:0; }
 .button.success { background:#5eae45; }
 .button.alert { background:#e01c33; }
 .button.information { background:#1a75ae; }
-.button.rounded { border-radius:0.5rem; -moz-border-radius:0.5rem; -webkit-border-radius:0.5rem; }
+.button.rounded { border-radius:0.25rem; -moz-border-radius:0.25rem; -webkit-border-radius:0.25rem; }
 
 /** Forms **/
 form li { margin-top:0.5rem; }
@@ -44,6 +44,7 @@ p { padding-top:0.5rem; padding-bottom:0.5rem; } /** Give Paragraphs Top and Bot
 pre { background:#f5f5f5; border:1px solid #ddd; padding:5px; overflow:auto; } /** PRE & CODE formatting **/
 
 @media screen and (max-width: 399px) {    /** Smallest Mobile View **/
+    .row { max-width:95%; } /** XSmall screens should have less margin from device edge **/
     .xsmall-1  { width:6.25%;  } .column + .xsmall-1 { width:6.0%; margin-left:1.25%; }
     .xsmall-2  { width:12.50%; } .column + .xsmall-2 { width:11.0%; margin-left:1.50%; }
     .xsmall-3  { width:18.75%; } .column + .xsmall-3 { width:17.25%; margin-left:1.50%; }
@@ -64,6 +65,7 @@ pre { background:#f5f5f5; border:1px solid #ddd; padding:5px; overflow:auto; } /
     .show-below-small, .show-below-medium, .show-below-large, .show-below-xlarge { display:block-inline; }  /** Show elements only below certain points **/
 }
 @media (min-width: 400px) and (max-width:799px) {    /** Mobile View **/
+    .row { max-width:95%; } /** Small screens should have less margin from device edge **/
     .small-1  { width:6.25%;  } .column + .small-1 { width:6.0%; margin-left:1.25%; }
     .small-2  { width:12.50%; } .column + .small-2 { width:11.0%; margin-left:1.50%; }
     .small-3  { width:18.75%; } .column + .small-3 { width:17.25%; margin-left:1.50%; }
