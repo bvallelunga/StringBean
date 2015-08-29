@@ -17,8 +17,9 @@
     <style type="text/css">
         body { font-family: 'Alegreya Sans', sans-serif; }
         #graded-bar { background:#000; }
-        #graded-bar h1 { color:#fff; padding:0; font-size:1.5rem; line-height:2rem; }
+        #graded-bar h1 { color:#fff; padding:0; font-size:1.5rem; line-height:2rem; margin-top:-0.5rem; margin-bottom:0.5rem; }
         #Strapline { color:#fff; }
+        .MyForm { max-width:500px; margin:0; }
     </style>
 
 </head>
@@ -33,7 +34,7 @@
                  </h1>
             </div>
 
-            <div class="column no-padding xsmall-16 small-16 medium-6 large-5 xlarge-4 align-right">
+            <div class="column no-padding hide-below-large large-5 xlarge-4 align-right">
                 <small id="Strapline">
                     Powering the internet, gently.
                 </small>
@@ -50,16 +51,106 @@
             <h1>String Bean</h1>
 
             <p>
-                The featherweight responsive CSS Framework based on a 16-point system, rhather than the traditional 12-point system that other frameworks use.
+                The featherweight responsive CSS Framework based on a 16-point system, rather than the traditional 12-point system that other frameworks use.
             </p>
 
             <p>
                 The extra 4 break points give you greater control over the widths of content on your site.  Sometimes 12 is just too few, especially on a high resolution screen, such as 4K - at 4K String Bean comes into its own!
             </p>
-
-
-
-            <h4>Simple Header Layout</h4>
+            
+            
+            
+            <h4>Forms &amp; Inputs</h4>
+            
+            <div class="grid MyForm">
+            
+                <form action="" method="post">
+                
+                    <li class="box xsmall-6 small-5 medium-5 large-5 xlarge-5">
+                        <label>
+                            First Name:
+                        </label>
+                    </li>
+                    
+                    <li class="box xsmall-16 small-11 medium-11 large-11 xlarge-11">
+                        <input type="text" value="Enter your first name..." class="full-16" />
+                    </li>
+                
+                    <li class="box xsmall-16 small-5 medium-5 large-5 xlarge-5">
+                        <label>
+                            Last Name:
+                        </label>
+                    </li>
+                    
+                    <li class="box xsmall-16 small-11 medium-11 large-11 xlarge-11">
+                        <input type="text" value="Enter your last name..." class="full-16" />
+                    </li>
+                
+                    <li class="box xsmall-16 small-5 medium-5 large-5 xlarge-5">
+                        <label>
+                            Phone Number:
+                        </label>
+                    </li>
+                    
+                    <li class="box xsmall-16 small-11 medium-11 large-11 xlarge-11">
+                        <input type="text" value="Enter your phone number..." class="full-16" />
+                    </li>
+                
+                    <li class="box xsmall-16 small-5 medium-5 large-5 xlarge-5">
+                        <label>
+                            Email Address:
+                        </label>
+                    </li>
+                    
+                    <li class="box xsmall-16 small-11 medium-11 large-11 xlarge-11">
+                        <input type="text" value="Enter your email address..." class="full-16" />
+                    </li>
+                    
+                    <li class="box xsmall-16 small-16 medium-16 large-16 xlarge-16 align-right">
+                        <input type="submit" value="Send Request" class="button information" />
+                    </li>
+                    
+                </form>
+            
+            </div>
+            
+            <p>
+                Forms use the same breakpoint classes that are used on the other elements, except you use a Grid and "li" elements to construct it. Like so :-
+            </p>
+            
+<pre><code>&lt;p class="grid"&gt;
+    &lt;form action="" method="post"&gt;
+    
+        &lt;li class="box xsmall-6 small-4 medium-4 large-2 xlarge-2"&gt;
+            &lt;label&gt;
+                First Name:
+            &lt;/label&gt;
+        &lt;/li&gt;
+        
+        &lt;li class="box xsmall-16 small-12 medium-12 large-14 xlarge-14"&gt;
+            &lt;input type="text" value="Enter your first name..." class="full-16" /&gt;
+        &lt;/li&gt;
+        
+        &lt;li class="box xsmall-16 small-4 medium-4 large-2 xlarge-2"&gt;
+            &lt;label&gt;
+                Email Address:
+            &lt;/label&gt;
+        &lt;/li&gt;
+        
+        &lt;li class="box xsmall-16 small-12 medium-12 large-14 xlarge-14"&gt;
+            &lt;input type="text" value="Enter your email address..." class="full-16" /&gt;
+        &lt;/li&gt;
+        
+        &lt;li class="box xsmall-16 small-16 medium-16 large-16 xlarge-16 align-right"&gt;
+            &lt;input type="submit" value="Send Request" class="button information" /&gt;
+        &lt;/li&gt;
+        
+    &lt;/form&gt;
+&lt;/p&gt;</code></pre>
+            
+            
+            
+            <h4>Using Breakpoints &amp; Columns</h4>
 
 <pre><code>&lt;header class="container"&gt;
     &lt;nav class="row"&gt;
@@ -76,6 +167,19 @@
     &lt;/nav&gt;
 &lt;/header&gt;
 </code></pre>
+
+
+            <h4 class="hide-below-large">Hiding content below breakpoints</h4>
+            
+            <p>
+                You can use the hide-below-x (where x is the xsmall, small, medium, large, or xlarge breakpoints) to hide content.  This section is tagged as such, so you won't be able to see it below "large".
+            </p>
+
+<pre class="hide-below-large"><code>&lt;div class="grid hide-below-medium"&gt;
+    &lt;li class="box xsmall-16 small-16 medium-8 large-4 xlarge-4"&gt;
+        &lt;img src="img/AdvertisementForLargeScreens.jpg" /&gt;
+    &lt;/li&gt;
+&lt;/div&gt;</code></pre>
 
 
             <h4>Buttons</h4>
@@ -103,48 +207,61 @@
         </div>
 
         <!-- Right Menu -->
-        <aside class="column medium-6 large-5 xlarge-4 hide-below-medium">
+        <aside class="column xsmall-16 small-16 medium-6 large-5 xlarge-4">
+        
+            <h4>Using Breakpoints &amp; Columns</h4>
 
-            <p>
-                <h3>Some pictures of string beans...</h3>
-            </p>
+<pre><code>&lt;header class="container"&gt;
+    &lt;nav class="row"&gt;
+        &lt;div class="column xsmall-16 small-16 medium-10 large-11 xlarge-12"&gt;
+            &lt;h1&gt;
+                String Bean
+            &lt;/h1&gt;
+        &lt;/div&gt;
+        &lt;div class="column xsmall-16 small-16 medium-6 large-5 xlarge-4"&gt;
+            &lt;p id="Strapline"&gt;
+                Powering the internet, gently.
+            &lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/nav&gt;
+&lt;/header&gt;
+</code></pre>
 
-            <ol class="grid">
 
-                <li class="box medium-8 large-4 xlarge-4 align-center">
-                    <img src="img/8.jpg" alt="" class="full-16" />
+            <h4>Some pictures of string beans...</h4>
+            
+            <ol class="grid full-16">
+
+                <li class="box xsmall-16 small-8 medium-8 large-4 xlarge-4 align-center">
+                    <img src="https://www.markgreenall.uk/assets/String-Bean/8.jpg" alt="" class="full-16" />
                 </li>
 
-                <li class="box medium-8 large-4 xlarge-4 align-center">
-                    <img src="img/1.jpg" alt="" class="full-16" />
+                <li class="box xsmall-16 small-8 medium-8 large-4 xlarge-4 align-center">
+                    <img src="https://www.markgreenall.uk/assets/String-Bean/1.jpg" alt="" class="full-16" />
                 </li>
 
-                <li class="box medium-8 large-4 xlarge-4 align-center">
-                    <img src="img/2.jpg" alt="" class="full-16" />
+                <li class="box xsmall-16 small-8 medium-8 large-4 xlarge-4 align-center">
+                    <img src="https://www.markgreenall.uk/assets/String-Bean/2.jpg" alt="" class="full-16" />
                 </li>
 
-                <li class="box medium-8 large-4 xlarge-4 align-center">
-                    <img src="img/4.jpg" alt="" class="full-16" />
+                <li class="box xsmall-16 small-8 medium-8 large-4 xlarge-4 align-center">
+                    <img src="https://www.markgreenall.uk/assets/String-Bean/4.jpg" alt="" class="full-16" />
                 </li>
 
-                <li class="box medium-8 large-4 xlarge-4 align-center">
-                    <img src="img/5.jpg" alt="" class="full-16" />
+                <li class="box xsmall-16 small-8 medium-8 large-4 xlarge-4 align-center">
+                    <img src="https://www.markgreenall.uk/assets/String-Bean/6.jpg" alt="" class="full-16" />
                 </li>
 
-                <li class="box medium-8 large-4 xlarge-4 align-center">
-                    <img src="img/6.jpg" alt="" class="full-16" />
+                <li class="box xsmall-16 small-8 medium-8 large-4 xlarge-4 align-center">
+                    <img src="https://www.markgreenall.uk/assets/String-Bean/7.jpg" alt="" class="full-16" />
                 </li>
 
-                <li class="box medium-8 large-4 xlarge-4 align-center">
-                    <img src="img/7.jpg" alt="" class="full-16" />
+                <li class="box xsmall-16 small-8 medium-8 large-4 xlarge-4 align-center">
+                    <img src="https://www.markgreenall.uk/assets/String-Bean/9.jpg" alt="" class="full-16" />
                 </li>
 
-                <li class="box medium-8 large-4 xlarge-4 align-center">
-                    <img src="img/9.jpg" alt="" class="full-16" />
-                </li>
-
-                <li class="box medium-8 large-4 xlarge-4 align-center">
-                    <img src="img/12.jpg" alt="" class="full-16" />
+                <li class="box xsmall-16 small-8 medium-8 large-4 xlarge-4 align-center">
+                    <img src="https://www.markgreenall.uk/assets/String-Bean/5.jpg" alt="" class="full-16" />
                 </li>
 
             </ol>
