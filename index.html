@@ -17,10 +17,11 @@
     <style type="text/css">
         body { font-family: 'Alegreya Sans', sans-serif; }
         #graded-bar { background:#000; }
-        #graded-bar h1 { color:#fff; padding:0; font-size:1.5rem; line-height:2rem; margin-top:-0.5rem; margin-bottom:0.5rem; }
-        #Strapline { color:#fff; }
+        #graded-bar h1 { color:#fff; padding:0; font-size:1.5rem; line-height:2rem; }
+        #Strapline { font-size:1.5rem; line-height:2rem; color:#fff; }
         .MyForm { max-width:500px; margin:0; }
         .Downloads { margin-top:15px; margin-bottom:15px; }
+        #logo { height:40px; margin-bottom:-10px; }
     </style>
 
 </head>
@@ -30,12 +31,12 @@
 
         <nav class="row">
             <div class="column no-padding xsmall-16 small-16 medium-10 large-11 xlarge-12">
-                 <h1>
-                     String Bean
-                 </h1>
+                <a href="">
+                    <img src="https://www.markgreenall.uk/assets/String-Bean/logo.png" alt="String Bean" id="logo" />
+                </a>
             </div>
 
-            <div class="column no-padding hide-below-large large-5 xlarge-4 align-right">
+            <div class="column no-padding large-5 xlarge-4 align-right hide-below-large ">
                 <small id="Strapline">
                     Powering the internet, gently.
                 </small>
@@ -49,7 +50,7 @@
 
         <div class="column xsmall-16 small-16 medium-10 large-11 xlarge-12">
 
-            <h1>String Bean</h1>
+            <h1>What is String Bean?</h1>
 
             <p>
                 The featherweight responsive CSS Framework based on a 16-point system, rather than the traditional 12-point system that other frameworks use. The extra 4 break points give you greater control over the widths of content on your site.  Sometimes 12 is just too few, especially on a high resolution screen, such as 4K - at 4K String Bean comes into its own!
@@ -71,7 +72,7 @@
             
             <div class="grid MyForm">
             
-                <form action="" method="post">
+                <form action="" method="post" name="MyForm">
                 
                     <li class="box xsmall-6 small-5 medium-5 large-5 xlarge-5">
                         <label>
@@ -114,7 +115,7 @@
                     </li>
                     
                     <li class="box xsmall-16 small-16 medium-16 large-16 xlarge-16 align-right">
-                        <input type="submit" value="Send Request" class="button information" />
+                        <a href="javascript:MyForm.submit" class="button information">Send Request</a>
                     </li>
                     
                 </form>
