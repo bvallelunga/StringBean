@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>String Bean - The Featherweight Responsive CSS Framework</title>
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!--[if lt IE 9]>
-        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    
+
     <link href='css/String-Bean.css' rel='stylesheet' type='text/css'>
 
     <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:500' rel='stylesheet' type='text/css'>
@@ -24,269 +24,280 @@
         #logo { height:40px; margin-bottom:-10px; }
     </style>
 
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-66609583-2', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
 </head>
 <body>
 
-    <header class="container" id="graded-bar">
+<header class="container" id="graded-bar">
 
-        <nav class="row">
-            <div class="column no-padding xsmall-16 small-16 medium-10 large-11 xlarge-12">
-                <a href="">
-                    <img src="https://www.markgreenall.uk/assets/String-Bean/logo.png" alt="String Bean" id="logo" />
-                </a>
-            </div>
+    <nav class="row">
+        <div class="column no-padding xsmall-16 small-16 medium-10 large-11 xlarge-12">
+            <a href="">
+                <img src="https://www.markgreenall.uk/assets/String-Bean/logo.png" alt="StringBean" id="logo" />
+            </a>
+        </div>
 
-            <div class="column no-padding large-5 xlarge-4 align-right hide-below-large ">
-                <small id="Strapline">
-                    Powering the internet, gently.
-                </small>
-            </div>
-        </nav>
-
-    </header>
-
-    <!-- Main Content -->
-    <article class="container row">
-
-        <div class="column xsmall-16 small-16 medium-10 large-11 xlarge-12">
-
-            <h1>What is String Bean?</h1>
-
-            <p>
-                The featherweight responsive CSS Framework based on a 16-point system (rather than the traditional 12-point system that other frameworks use)
-                this gives the developer the power to divide the screen up in more finite segments. The extra 4 break points give you greater control over the
-                widths of content on your site.  Sometimes, 12 is just too few, especially on a high resolution screen, such as 4K - at 4K String Bean comes
-                into its own!
-            </p>
-
-            <p>
-                In addition to this, String Bean also has 5 breakpoints instead of the traditional 4. You can implement your design with: xsmall, small, medium, large, and xlarge.
-            </p>
-
-            <p class="Downloads">
-                <a href="https://github.com/markgreenall/String-Bean/" class="button information rounded">View on Github</a>
-                <a href="https://github.com/markgreenall/String-Bean/zipball/master" class="button success rounded">Download .zip</a>
-                <a href="https://github.com/markgreenall/String-Bean/tarball/master" class="button success rounded">Download .tar.gz</a>
-            </p>
-
-            <h2>How does it work?</h2>
-
-            <p>
-                Let's have a look at some of the things you can do with the String Bean framework...
-            </p>
-
-            <h4>Forms &amp; Inputs</h4>
-            
-            <div class="grid MyForm">
-            
-                <form action="" method="post" name="MyForm">
-                
-                    <li class="box xsmall-6 small-5 medium-5 large-5 xlarge-5">
-                        <label>
-                            First Name:
-                        </label>
-                    </li>
-                    
-                    <li class="box xsmall-16 small-11 medium-11 large-11 xlarge-11">
-                        <input type="text" value="Enter your first name..." class="full-16" />
-                    </li>
-                
-                    <li class="box xsmall-16 small-5 medium-5 large-5 xlarge-5">
-                        <label>
-                            Last Name:
-                        </label>
-                    </li>
-                    
-                    <li class="box xsmall-16 small-11 medium-11 large-11 xlarge-11">
-                        <input type="text" value="Enter your last name..." class="full-16" />
-                    </li>
-                
-                    <li class="box xsmall-16 small-5 medium-5 large-5 xlarge-5">
-                        <label>
-                            Phone Number:
-                        </label>
-                    </li>
-                    
-                    <li class="box xsmall-16 small-11 medium-11 large-11 xlarge-11">
-                        <input type="text" value="Enter your phone number..." class="full-16" />
-                    </li>
-                
-                    <li class="box xsmall-16 small-5 medium-5 large-5 xlarge-5">
-                        <label>
-                            Email Address:
-                        </label>
-                    </li>
-                    
-                    <li class="box xsmall-16 small-11 medium-11 large-11 xlarge-11">
-                        <input type="text" value="Enter your email address..." class="full-16" />
-                    </li>
-                    
-                    <li class="box xsmall-16 small-16 medium-16 large-16 xlarge-16 align-right">
-                        <a href="javascript:MyForm.submit" class="button information rounded">Send Request</a>
-                    </li>
-                    
-                </form>
-            
-            </div>
-            
-            <p>
-                Forms use the same breakpoint classes that are used on the other elements, except you use a Grid and "li" elements to construct it. Like so :-
-            </p>
-            
-<pre><code>&lt;p class="grid"&gt;
-    &lt;form action="" method="post"&gt;
-    
-        &lt;li class="box xsmall-6 small-4 medium-4 large-2 xlarge-2"&gt;
-            &lt;label&gt;
-                First Name:
-            &lt;/label&gt;
-        &lt;/li&gt;
-        
-        &lt;li class="box xsmall-16 small-12 medium-12 large-14 xlarge-14"&gt;
-            &lt;input type="text" value="Enter your first name..." class="full-16" /&gt;
-        &lt;/li&gt;
-        
-        &lt;li class="box xsmall-16 small-4 medium-4 large-2 xlarge-2"&gt;
-            &lt;label&gt;
-                Email Address:
-            &lt;/label&gt;
-        &lt;/li&gt;
-        
-        &lt;li class="box xsmall-16 small-12 medium-12 large-14 xlarge-14"&gt;
-            &lt;input type="text" value="Enter your email address..." class="full-16" /&gt;
-        &lt;/li&gt;
-        
-        &lt;li class="box xsmall-16 small-16 medium-16 large-16 xlarge-16 align-right"&gt;
-            &lt;input type="submit" value="Send Request" class="button information" /&gt;
-        &lt;/li&gt;
-        
-    &lt;/form&gt;
-&lt;/p&gt;</code></pre>
-            
-            
-            
-            <h4>Using Breakpoints &amp; Columns</h4>
-
-<pre><code>&lt;header class="container"&gt;
-    &lt;nav class="row"&gt;
-        &lt;div class="column xsmall-16 small-16 medium-10 large-11 xlarge-12"&gt;
-            &lt;h1&gt;
-                String Bean
-            &lt;/h1&gt;
-        &lt;/div&gt;
-        &lt;div class="column xsmall-16 small-16 medium-6 large-5 xlarge-4"&gt;
-            &lt;p id="Strapline"&gt;
+        <div class="column no-padding large-5 xlarge-4 align-right hide-below-large ">
+            <small id="Strapline">
                 Powering the internet, gently.
-            &lt;/p&gt;
-        &lt;/div&gt;
-    &lt;/nav&gt;
-&lt;/header&gt;
-</code></pre>
+            </small>
+        </div>
+    </nav>
 
+</header>
 
-            <h4 class="hide-below-large">Hiding content below breakpoints</h4>
-            
-            <p>
-                You can use the hide-below-x (where x is the xsmall, small, medium, large, or xlarge breakpoints) to hide content.  This section is tagged as such, so you won't be able to see it below "large".
-            </p>
+<!-- Main Content -->
+<article class="container row">
 
-<pre class="hide-below-large"><code>&lt;div class="grid hide-below-medium"&gt;
-    &lt;li class="box xsmall-16 small-16 medium-8 large-4 xlarge-4"&gt;
-        &lt;img src="img/AdvertisementForLargeScreens.jpg" /&gt;
-    &lt;/li&gt;
-&lt;/div&gt;</code></pre>
+    <div class="column xsmall-16 small-16 medium-10 large-11 xlarge-12">
 
+        <h1>What is StringBean?</h1>
 
-            <h4>Buttons</h4>
+        <p>
+            The featherweight responsive CSS Framework based on a 16-point system (rather than the traditional 12-point system that other frameworks use)
+            this gives the developer the power to divide the screen up in more finite segments. The extra 4 break points give you greater control over the
+            widths of content on your site.  Sometimes, 12 is just too few, especially on a high resolution screen, such as 4K - at 4K String Bean comes
+            into its own!
+        </p>
 
-<pre><code>&lt;a href="/login" class="button normal information"&gt;Login&lt;/a&gt;
-&lt;a href="/login" class="button normal alert"&gt;Register&lt;/a&gt;</code></pre>
+        <p>
+            In addition to this, String Bean also has 5 breakpoints instead of the traditional 4. You can implement your design with: xsmall, small, medium, large, and xlarge.
+        </p>
 
+        <p class="Downloads">
+            <a href="https://github.com/markgreenall/String-Bean/" class="button information rounded">View on Github</a>
+            <a href="https://github.com/markgreenall/String-Bean/zipball/master" class="button success rounded">Download .zip</a>
+            <a href="https://github.com/markgreenall/String-Bean/tarball/master" class="button success rounded">Download .tar.gz</a>
+        </p>
 
-            <h4>Grid</h4>
+        <h2>How does it work?</h2>
 
-<pre><code>&lt;div class="grid"&gt;
-    &lt;li class="box xsmall-16 small-16 medium-8 large-4 xlarge-4"&gt;
-        Box #1
-    &lt;/li&gt;
-    &lt;li class="box xsmall-16 small-16 medium-8 large-4 xlarge-4"&gt;
-        Box #2
-    &lt;/li&gt;
-    &lt;li class="box xsmall-16 small-16 medium-8 large-4 xlarge-4"&gt;
-        Box #3
-    &lt;/li&gt;
-&lt;/div&gt;</code></pre>
+        <p>
+            Let's have a look at some of the things you can do with the String Bean framework...
+        </p>
 
-            <p>As simple as that!.</p>
+        <h4>Forms &amp; Inputs</h4>
+
+        <div class="grid MyForm">
+
+            <form action="" method="post" name="MyForm">
+
+                <li class="box xsmall-6 small-5 medium-5 large-5 xlarge-5">
+                    <label>
+                        First Name:
+                    </label>
+                </li>
+
+                <li class="box xsmall-16 small-11 medium-11 large-11 xlarge-11">
+                    <input type="text" value="Enter your first name..." class="full-16" />
+                </li>
+
+                <li class="box xsmall-16 small-5 medium-5 large-5 xlarge-5">
+                    <label>
+                        Last Name:
+                    </label>
+                </li>
+
+                <li class="box xsmall-16 small-11 medium-11 large-11 xlarge-11">
+                    <input type="text" value="Enter your last name..." class="full-16" />
+                </li>
+
+                <li class="box xsmall-16 small-5 medium-5 large-5 xlarge-5">
+                    <label>
+                        Phone Number:
+                    </label>
+                </li>
+
+                <li class="box xsmall-16 small-11 medium-11 large-11 xlarge-11">
+                    <input type="text" value="Enter your phone number..." class="full-16" />
+                </li>
+
+                <li class="box xsmall-16 small-5 medium-5 large-5 xlarge-5">
+                    <label>
+                        Email Address:
+                    </label>
+                </li>
+
+                <li class="box xsmall-16 small-11 medium-11 large-11 xlarge-11">
+                    <input type="text" value="Enter your email address..." class="full-16" />
+                </li>
+
+                <li class="box xsmall-16 small-16 medium-16 large-16 xlarge-16 align-right">
+                    <a href="javascript:MyForm.submit" class="button information rounded">Send Request</a>
+                </li>
+
+            </form>
 
         </div>
 
-        <!-- Right Menu -->
-        <aside class="column xsmall-16 small-16 medium-6 large-5 xlarge-4">
-        
-            <h4>Using Breakpoints &amp; Columns</h4>
+        <p>
+            Forms use the same breakpoint classes that are used on the other elements, except you use a Grid and "li" elements to construct it. Like so :-
+        </p>
+            
+<pre><code>&lt;p class="grid"&gt;
+    &lt;form action="" method="post"&gt;
+
+    &lt;li class="box xsmall-6 small-4 medium-4 large-2 xlarge-2"&gt;
+    &lt;label&gt;
+    First Name:
+    &lt;/label&gt;
+    &lt;/li&gt;
+
+    &lt;li class="box xsmall-16 small-12 medium-12 large-14 xlarge-14"&gt;
+    &lt;input type="text" value="Enter your first name..." class="full-16" /&gt;
+    &lt;/li&gt;
+
+    &lt;li class="box xsmall-16 small-4 medium-4 large-2 xlarge-2"&gt;
+    &lt;label&gt;
+    Email Address:
+    &lt;/label&gt;
+    &lt;/li&gt;
+
+    &lt;li class="box xsmall-16 small-12 medium-12 large-14 xlarge-14"&gt;
+    &lt;input type="text" value="Enter your email address..." class="full-16" /&gt;
+    &lt;/li&gt;
+
+    &lt;li class="box xsmall-16 small-16 medium-16 large-16 xlarge-16 align-right"&gt;
+    &lt;input type="submit" value="Send Request" class="button information" /&gt;
+    &lt;/li&gt;
+
+    &lt;/form&gt;
+    &lt;/p&gt;</code></pre>
+
+
+
+        <h4>Using Breakpoints &amp; Columns</h4>
 
 <pre><code>&lt;header class="container"&gt;
     &lt;nav class="row"&gt;
-        &lt;div class="column xsmall-16 small-16 medium-10 large-11 xlarge-12"&gt;
-            &lt;h1&gt;
-                String Bean
-            &lt;/h1&gt;
-        &lt;/div&gt;
-        &lt;div class="column xsmall-16 small-16 medium-6 large-5 xlarge-4"&gt;
-            &lt;p id="Strapline"&gt;
-                Powering the internet, gently.
-            &lt;/p&gt;
-        &lt;/div&gt;
+    &lt;div class="column xsmall-16 small-16 medium-10 large-11 xlarge-12"&gt;
+    &lt;h1&gt;
+    String Bean
+    &lt;/h1&gt;
+    &lt;/div&gt;
+    &lt;div class="column xsmall-16 small-16 medium-6 large-5 xlarge-4"&gt;
+    &lt;p id="Strapline"&gt;
+    Powering the internet, gently.
+    &lt;/p&gt;
+    &lt;/div&gt;
     &lt;/nav&gt;
-&lt;/header&gt;
+    &lt;/header&gt;
 </code></pre>
 
 
-            <h4>Some pictures of string beans...</h4>
-            
-            <ol class="grid full-16">
+        <h4 class="hide-below-large">Hiding content below breakpoints</h4>
 
-                <li class="box xsmall-16 small-8 medium-8 large-4 xlarge-4 align-center">
-                    <img src="https://www.markgreenall.uk/assets/String-Bean/8.jpg" alt="String Beans!" class="full-16" />
-                </li>
+        <p>
+            You can use the hide-below-x (where x is the xsmall, small, medium, large, or xlarge breakpoints) to hide content.  This section is tagged as such, so you won't be able to see it below "large".
+        </p>
 
-                <li class="box xsmall-16 small-8 medium-8 large-4 xlarge-4 align-center">
-                    <img src="https://www.markgreenall.uk/assets/String-Bean/1.jpg" alt="More String Beans!" class="full-16" />
-                </li>
+<pre class="hide-below-large"><code>&lt;div class="grid hide-below-medium"&gt;
+    &lt;li class="box xsmall-16 small-16 medium-8 large-4 xlarge-4"&gt;
+    &lt;img src="img/AdvertisementForLargeScreens.jpg" /&gt;
+    &lt;/li&gt;
+    &lt;/div&gt;</code></pre>
 
-                <li class="box xsmall-16 small-8 medium-8 large-4 xlarge-4 align-center">
-                    <img src="https://www.markgreenall.uk/assets/String-Bean/2.jpg" alt="Even more String Beans!" class="full-16" />
-                </li>
 
-                <li class="box xsmall-16 small-8 medium-8 large-4 xlarge-4 align-center">
-                    <img src="https://www.markgreenall.uk/assets/String-Bean/4.jpg" alt="Wow! Loads of String Beans!" class="full-16" />
-                </li>
+        <h4>Buttons</h4>
 
-                <li class="box xsmall-16 small-8 medium-8 large-4 xlarge-4 align-center">
-                    <img src="https://www.markgreenall.uk/assets/String-Bean/6.jpg" alt="Exciting levels of String Beans!" class="full-16" />
-                </li>
+<pre><code>&lt;a href="/login" class="button normal information"&gt;Login&lt;/a&gt;
+    &lt;a href="/login" class="button normal alert"&gt;Register&lt;/a&gt;</code></pre>
 
-                <li class="box xsmall-16 small-8 medium-8 large-4 xlarge-4 align-center">
-                    <img src="https://www.markgreenall.uk/assets/String-Bean/7.jpg" alt="String Beans! Everywhere!" class="full-16" />
-                </li>
 
-                <li class="box xsmall-16 small-8 medium-8 large-4 xlarge-4 align-center">
-                    <img src="https://www.markgreenall.uk/assets/String-Bean/9.jpg" alt="Ooh, shut that door! Some String Beans!" class="full-16" />
-                </li>
+        <h4>Grid</h4>
 
-                <li class="box xsmall-16 small-8 medium-8 large-4 xlarge-4 align-center">
-                    <img src="https://www.markgreenall.uk/assets/String-Bean/5.jpg" alt="Never felt so vegetarian as I do around String Beans!" class="full-16" />
-                </li>
+<pre><code>&lt;div class="grid"&gt;
+    &lt;li class="box xsmall-16 small-16 medium-8 large-4 xlarge-4"&gt;
+    Box #1
+    &lt;/li&gt;
+    &lt;li class="box xsmall-16 small-16 medium-8 large-4 xlarge-4"&gt;
+    Box #2
+    &lt;/li&gt;
+    &lt;li class="box xsmall-16 small-16 medium-8 large-4 xlarge-4"&gt;
+    Box #3
+    &lt;/li&gt;
+    &lt;/div&gt;</code></pre>
 
-            </ol>
+        <p>As simple as that!.</p>
 
-        </aside>
+    </div>
 
-    </article>
-    
-    <script src="js/matchmedia.polyfill.js"></script>
-    <script src="js/Respond.js"></script>
+    <!-- Right Menu -->
+    <aside class="column xsmall-16 small-16 medium-6 large-5 xlarge-4">
+
+        <h4>Using Breakpoints &amp; Columns</h4>
+
+<pre><code>&lt;header class="container"&gt;
+    &lt;nav class="row"&gt;
+    &lt;div class="column xsmall-16 small-16 medium-10 large-11 xlarge-12"&gt;
+    &lt;h1&gt;
+    String Bean
+    &lt;/h1&gt;
+    &lt;/div&gt;
+    &lt;div class="column xsmall-16 small-16 medium-6 large-5 xlarge-4"&gt;
+    &lt;p id="Strapline"&gt;
+    Powering the internet, gently.
+    &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;/nav&gt;
+    &lt;/header&gt;
+</code></pre>
+
+
+        <h4>Some pictures of string beans...</h4>
+
+        <ol class="grid full-16">
+
+            <li class="box xsmall-16 small-8 medium-8 large-4 xlarge-4 align-center">
+                <img src="https://www.markgreenall.uk/assets/String-Bean/8.jpg" alt="String Beans!" class="full-16" />
+            </li>
+
+            <li class="box xsmall-16 small-8 medium-8 large-4 xlarge-4 align-center">
+                <img src="https://www.markgreenall.uk/assets/String-Bean/1.jpg" alt="More String Beans!" class="full-16" />
+            </li>
+
+            <li class="box xsmall-16 small-8 medium-8 large-4 xlarge-4 align-center">
+                <img src="https://www.markgreenall.uk/assets/String-Bean/2.jpg" alt="Even more String Beans!" class="full-16" />
+            </li>
+
+            <li class="box xsmall-16 small-8 medium-8 large-4 xlarge-4 align-center">
+                <img src="https://www.markgreenall.uk/assets/String-Bean/4.jpg" alt="Wow! Loads of String Beans!" class="full-16" />
+            </li>
+
+            <li class="box xsmall-16 small-8 medium-8 large-4 xlarge-4 align-center">
+                <img src="https://www.markgreenall.uk/assets/String-Bean/6.jpg" alt="Exciting levels of String Beans!" class="full-16" />
+            </li>
+
+            <li class="box xsmall-16 small-8 medium-8 large-4 xlarge-4 align-center">
+                <img src="https://www.markgreenall.uk/assets/String-Bean/7.jpg" alt="String Beans! Everywhere!" class="full-16" />
+            </li>
+
+            <li class="box xsmall-16 small-8 medium-8 large-4 xlarge-4 align-center">
+                <img src="https://www.markgreenall.uk/assets/String-Bean/9.jpg" alt="Ooh, shut that door! Some String Beans!" class="full-16" />
+            </li>
+
+            <li class="box xsmall-16 small-8 medium-8 large-4 xlarge-4 align-center">
+                <img src="https://www.markgreenall.uk/assets/String-Bean/5.jpg" alt="Never felt so vegetarian as I do around String Beans!" class="full-16" />
+            </li>
+
+        </ol>
+
+    </aside>
+
+</article>
+
+<script src="js/matchmedia.polyfill.js"></script>
+<script src="js/Respond.js"></script>
 
 </body>
 </html>
