@@ -34,8 +34,8 @@ input.button { padding:0; margin:0; }
 .button.rounded { border-radius:0.25rem; -moz-border-radius:0.25rem; -webkit-border-radius:0.25rem; }
 
 /** Forms **/
-form li { margin-top:0.5rem; }
-form li > label { font-size:1rem; line-height:1rem; padding-top:0.15rem; }
+form li { margin-top:0.5rem; line-height:1.75rem; }
+form li > label { font-size:1rem; line-height:1rem; }
 form li > input { border:1px solid #ddd; background:#fafafa; padding:0.25rem; color:#555; }
 
 /** Inline Elements Define **/
