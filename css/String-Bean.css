@@ -1,6 +1,6 @@
 /** Resets **/
 body { padding:0; margin:0; }
-div,p,table,tr,td,span,small,header,footer,article,aside,a,input,textarea,form,ol,ul,li,nav,label { margin:0; padding:0; display:block-inline; overflow:hidden; box-sizing: border-box; }
+div,p,table,tr,td,span,small,header,footer,article,aside,a,input,textarea,form,ol,ul,li,nav,label { margin:0; padding:0; display:inline-block; overflow:hidden; box-sizing: border-box; }
 h1 {font-size:3rem;} h2 {font-size:2.5rem;} h3 {font-size:2rem;} h4 {font-size:1.5rem;} h5 {font-size:1rem;} h6 {font-size:0.75rem;}
 h1,h2,h3,h4,h5,h6 { padding:0; padding-top:1rem; margin:0; }
 
@@ -24,7 +24,7 @@ h1,h2,h3,h4,h5,h6 { padding:0; padding-top:1rem; margin:0; }
 
 /** Buttons **/
 input.button { padding:0; margin:0; }
-.button { padding-left:1.5rem; padding-right:1.5rem; padding-top:0.75rem; padding-bottom:0.75rem; margin-left:0.25rem; position:relative; left:-0.25rem; margin-right:0.25rem; color:#fff; font-size:1rem; line-height:3rem; text-decoration:none; opacity:1; display:block-inline; white-space: nowrap; }
+.button { padding-left:1.5rem; padding-right:1.5rem; padding-top:0.75rem; padding-bottom:0.75rem; margin-left:0.25rem; position:relative; left:-0.25rem; margin-right:0.25rem; color:#fff; font-size:1rem; line-height:1rem; text-decoration:none; opacity:1; display:inline-block; white-space: nowrap; }
 .button + .button { margin-left:0.25rem; margin-right:0.25rem; } /** If two buttons then pad-left the second **/
 .button:hover { opacity:0.85; }
 .button.normal { background:#000; }
@@ -34,8 +34,8 @@ input.button { padding:0; margin:0; }
 .button.rounded { border-radius:0.25rem; -moz-border-radius:0.25rem; -webkit-border-radius:0.25rem; }
 
 /** Forms **/
-form li { margin-top:0.5rem; }
-form li > label { font-size:1rem; line-height:1.5rem; }
+form li { margin-top:0.5rem; line-height:1.75rem; }
+form li > label { font-size:1rem; line-height:1rem; }
 form li > input { border:1px solid #ddd; background:#fafafa; padding:0.25rem; color:#555; }
 
 /** Inline Elements Define **/
@@ -62,7 +62,7 @@ pre { background:#f5f5f5; border:1px solid #ddd; padding:5px; overflow:auto; } /
     .xsmall-15 { width:93.75%; } .column + .xsmall-15 { width:92.25%; margin-left:1.5%; }
     .xsmall-16, .full-16 { width:99.99%; }
     .hide-below-small, .hide-below-medium, .hide-below-large, .hide-below-xlarge { display:none; }  /** Hide elements below certain points **/
-    .show-below-small, .show-below-medium, .show-below-large, .show-below-xlarge { display:block-inline; }  /** Show elements only below certain points **/
+    .show-below-small, .show-below-medium, .show-below-large, .show-below-xlarge { display:inline-block; }  /** Show elements only below certain points **/
 }
 @media (min-width: 400px) and (max-width:799px) {    /** Mobile View **/
     .row { max-width:95%; } /** Small screens should have less margin from device edge **/
@@ -83,7 +83,7 @@ pre { background:#f5f5f5; border:1px solid #ddd; padding:5px; overflow:auto; } /
     .small-15 { width:93.75%; } .column + .small-15 { width:92.25%; margin-left:1.5%; }
     .small-16, .full-16 { width:99.99%; }
     .hide-below-medium, .hide-below-large, .hide-below-xlarge { display:none; }  /** Hide elements below certain points **/
-    .show-below-medium, .show-below-large, .show-below-xlarge { display:block-inline; } .show-below-small { display:none; }  /** Show elements only below certain points **/
+    .show-below-medium, .show-below-large, .show-below-xlarge { display:inline-block; } .show-below-small { display:none; }  /** Show elements only below certain points **/
 }
 @media (min-width: 800px) and (max-width:1279px) {    /** Tablet / Laptop / Desktop View **/
     .medium-1  { width:6.25%;  } .column + .medium-1 { width:6.0%; margin-left:1.25%; }
@@ -103,7 +103,7 @@ pre { background:#f5f5f5; border:1px solid #ddd; padding:5px; overflow:auto; } /
     .medium-15 { width:93.75%; } .column + .medium-15 { width:92.25%; margin-left:1.5%; }
     .medium-16, .full-16 { width:99.99%; }
     .hide-below-large, .hide-below-xlarge { display:none; }  /** Hide elements below certain points **/
-    .show-below-large, .show-below-xlarge { display:block-inline; } .show-below-small, .show-below-medium { display:none; }  /** Show elements only below certain points **/
+    .show-below-large, .show-below-xlarge { display:inline-block; } .show-below-small, .show-below-medium { display:none; }  /** Show elements only below certain points **/
 }
 @media (min-width: 1280px) and (max-width:1919px) {    /** Desktop / Laptop View **/
     .large-1  { width:6.25%;  } .column + .large-1 { width:6.0%; margin-left:1.25%; }
@@ -123,7 +123,7 @@ pre { background:#f5f5f5; border:1px solid #ddd; padding:5px; overflow:auto; } /
     .large-15 { width:93.75%; } .column + .large-15 { width:92.25%; margin-left:1.5%; }
     .large-16, .full-16 { width:99.99%; }
     .hide-below-xlarge { display:none; }  /** Hide elements below certain points **/
-    .show-below-xlarge { display:block-inline; } .show-below-small, .show-below-medium, .show-below-large { display:none; }  /** Show elements only below certain points **/
+    .show-below-xlarge { display:inline-block; } .show-below-small, .show-below-medium, .show-below-large { display:none; }  /** Show elements only below certain points **/
 }
 @media (min-width: 1920px) {    /** High Definition Devices **/
     .xlarge-1  { width:6.25%;  } .column + .xlarge-1 { width:6.0%; margin-left:1.25%; }
