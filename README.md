@@ -47,4 +47,17 @@ Can be found here: http://markgreenall.github.io/StringBean
         </li>
     </div>
 
+### Hiding Content Below Breakpoints
+You can hide content below certain breakpoints - for instance: hide-below-large will hide the element below the large breakpoint.
+
+    <div class="hide-below-medium">
+        Hello world!
+    </div>
+
+### Showing Content Below Certain Breakpoints
+
+    <div class="show-below-large">
+        Hello World!
+    </div>
+
 As simple as that!  You should also check out the button functionality.
