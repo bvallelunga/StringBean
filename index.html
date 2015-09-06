@@ -144,7 +144,7 @@
             Forms use the same breakpoint classes that are used on the other elements, except you use a Grid and "li" elements to construct it. Like so :-
         </p>
             
-<pre><code>&lt;p class="grid"&gt;
+<pre><code class="language-css">&lt;p class="grid"&gt;
     &lt;form action="" method="post"&gt;
 
         &lt;li class="box xsmall-6 small-4 medium-4 large-2 xlarge-2"&gt;
@@ -178,7 +178,7 @@
 
         <h4>Using Breakpoints &amp; Columns</h4>
 
-<pre><code>&lt;header class="container"&gt;
+<pre><code class="language-css">&lt;header class="container"&gt;
     &lt;nav class="row"&gt;
         &lt;div class="column xsmall-16 small-16 medium-10 large-11 xlarge-12"&gt;
             &lt;h1&gt;
@@ -200,7 +200,7 @@
             You can use the hide-below-x (where x is the xsmall, small, medium, large, or xlarge breakpoints) to hide content.  This section is tagged as such, so you won't be able to see it below "large".
         </p>
 
-<pre class="hide-below-large"><code>&lt;div class="grid hide-below-medium"&gt;
+<pre><code class="language-css">&lt;div class="grid hide-below-medium"&gt;
     Hello World!
 &lt;/div&gt;</code></pre>
 
@@ -211,20 +211,20 @@
             You can use the show-below-x (where x is the xsmall, small, medium, large, or xlarge breakpoints) to show content.  This section is tagged as such, so you won't be able to see it below "large".
         </p>
 
-<pre class="hide-below-large"><code>&lt;div class="grid show-below-medium"&gt;
+<pre><code class="language-css">&lt;div class="grid show-below-medium"&gt;
     Hello World!
 &lt;/div&gt;</code></pre>
 
 
         <h4>Buttons</h4>
 
-<pre><code>&lt;a href="/login" class="button normal information"&gt;Login&lt;/a&gt;
+<pre><code class="language-css">&lt;a href="/login" class="button normal information"&gt;Login&lt;/a&gt;
 &lt;a href="/login" class="button normal alert"&gt;Register&lt;/a&gt;</code></pre>
 
 
         <h4>Grid</h4>
 
-<pre><code>&lt;div class="grid"&gt;
+<pre><code class="language-css">&lt;div class="grid"&gt;
     &lt;li class="box xsmall-16 small-16 medium-8 large-4 xlarge-4"&gt;
         Box #1
     &lt;/li&gt;
@@ -242,23 +242,6 @@
 
     <!-- Right Menu -->
     <aside class="column xsmall-16 small-16 medium-6 large-5 xlarge-4">
-
-        <h4>Using Breakpoints &amp; Columns</h4>
-
-<pre><code>&lt;header class="container"&gt;
-    &lt;nav class="row"&gt;
-        &lt;div class="column xsmall-16 small-16 medium-10 large-11 xlarge-12"&gt;
-            &lt;h1&gt;
-                String Bean
-            &lt;/h1&gt;
-        &lt;/div&gt;
-        &lt;div class="column xsmall-16 small-16 medium-6 large-5 xlarge-4"&gt;
-            &lt;p id="Strapline"&gt;
-                Powering the internet, gently.
-            &lt;/p&gt;
-        &lt;/div&gt;
-    &lt;/nav&gt;
-&lt;/header&gt;</code></pre>
 
 
         <h4>Some pictures of string beans...</h4>
@@ -305,6 +288,11 @@
 
 <script src="js/matchmedia.polyfill.js"></script>
 <script src="js/Respond.js"></script>
+
+<!-- PRISM - Syntax Highlighter -->
+    <link href="http://beta.markgreenall.uk/css/Prism.css" rel="stylesheet" />
+    <script src="http://beta.markgreenall.uk/js/Prism.js"></script>
+<!-- -->
 
 </body>
 </html>
