@@ -1,6 +1,6 @@
 /** Resets **/
 body { padding:0; margin:0; }
-div,p,table,tr,td,span,small,header,footer,article,aside,a,input,textarea,form,ol,ul,li,nav,label { margin:0; padding:0; display:inline-block; overflow:hidden; box-sizing: border-box; }
+div,p,table,tr,td,span,small,header,footer,article,aside,a,input,textarea,form,ol,ul,li,nav,label { margin:0; padding:0; display:block; box-sizing: border-box; }
 h1 {font-size:3rem;} h2 {font-size:2.5rem;} h3 {font-size:2rem;} h4 {font-size:1.5rem;} h5 {font-size:1rem;} h6 {font-size:0.75rem;}
 h1,h2,h3,h4,h5,h6 { padding:0; padding-top:1rem; margin:0; }
 
@@ -8,7 +8,8 @@ h1,h2,h3,h4,h5,h6 { padding:0; padding-top:1rem; margin:0; }
 .container { display:block; padding-top:1rem; padding-bottom:1rem; }
 .row { display:block; max-width:90%; margin:auto; clear:both; }
 .grid { display:block; margin:auto; clear:both; }
-
+.Grid-960 { max-width:960px; } .Grid-980 { max-width:980px; } .Grid-1000 { max-width:1000px; }  /** Enforce Grid max widths **/
+    
 /** Alignment **/
 .align-left { text-align:left; } .align-center { text-align:center; } .align-right { text-align:right; }
 
@@ -35,8 +36,8 @@ input.button { padding:0; margin:0; }
 
 /** Aside-Menu - Navigation Menu **/
     nav a { text-decoration:none; color:#000; width:100%; cursor:pointer; }
-    nav.aside-menu { height:30rem; overflow:auto; overflow-x:hidden; }
-    nav.aside-menu > ul > li { display:block; padding:0.5rem 0 0.5rem 0; width:100%; font-weight:bold; }
+    nav.aside-menu { height:25rem; overflow:auto; overflow-x:hidden; }
+    nav.aside-menu > ul > li { display:block; padding:0.5rem 0rem 0.5rem 0rem; width:100%; font-weight:bold; }
     nav.aside-menu > ul > ul > menuitem > .button, nav.aside-menu > ul > ul > li > .button, nav.aside-menu > ul > ul > .button { margin-left:0; margin-right:0; padding:0.5rem 0 0.5rem 0; position:static; border-top:1px dotted #ddd; color:#000; width:100%; white-space:normal; word-wrap:normal; } /** Nav Menu Items Take Full Width **/
     nav.aside-menu > ul > ul > menuitem > .button:hover, 
     nav.aside-menu > ul > ul > li > .button:hover, 
