@@ -3,10 +3,6 @@ The featherweight responsive CSS Framework based on a 16-point system (rather th
 
 In addition to this, String Bean also has 5 breakpoints instead of the traditional 4. You can implement your design with: xsmall, small, medium, large, and xlarge.
 
-## Demo Site
-
-Can be found here: http://markgreenall.github.io/StringBean
-
 ## Examples
 
 #### Simple Header Layout
