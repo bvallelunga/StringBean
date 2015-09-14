@@ -74,3 +74,8 @@ You can hide content below certain breakpoints - for instance: hide-below-large 
     </div>
 
 As simple as that!  You should also check out the button functionality.
+
+### A word on Internet Explorer 8 and Below
+This framework has limited support for IE8 and below. The web has moved on since those early days, and we cannot support old browsers forever.  Now that Windows XP is out of support we welcome the deprecation of IE7 & 8, and look forward to a truely responsive internet.
+
+If you require IE8 support then you can use the HTML5Shiv and Respond.js polyfills provided by third party, to give basic StringBean support.
