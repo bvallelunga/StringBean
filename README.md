@@ -25,7 +25,7 @@ This demonstrates a page layout with StringBean classes applied.  You will notic
       </nav>
     </header>
 
-#### Breakpoint Examples
+#### Breakpoint Breakdown
 
     Class           (x) Points      Device Widths
     xsmall-x        1 to 16         =< 399px
@@ -35,12 +35,12 @@ This demonstrates a page layout with StringBean classes applied.  You will notic
     xlarge-x        1 to 16         >= 1920px
     full-16         16 (Fixed)      All Resolutions
 
-##### Example of use
+##### Using breakpoint specific selectors
 You can stack the breakpoint selectors on an element.
 
     class="xsmall-5 small-9 medium-10 large-2"
 
-##### Example of full-16
+##### Taking full width on all breakpoints
 If you apply this class then it will take 16 points (full width of parent) in all breakpoints.
 
     class="full-16"
