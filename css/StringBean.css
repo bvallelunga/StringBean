@@ -1,4 +1,3 @@
-/** Resets **/
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; box-sizing: border-box; }
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
 ol, ul { list-style: none; }
@@ -28,28 +27,22 @@ h1 {font-size:3rem;} h2 {font-size:2.5rem;} h3 {font-size:2rem;} h4 {font-size:1
 /** Buttons **/
 input.button { padding:0; margin:0; }
 .button { padding-left:1.5rem; padding-right:1.5rem; padding-top:0.75rem; padding-bottom:0.75rem; margin-left:0.25rem; position:relative; left:-0.25rem; margin-right:0.25rem; color:#fff; font-size:1rem; line-height:1rem; text-decoration:none; opacity:1; display:inline-block; white-space: nowrap; }
-.button + .button { margin-left:0.25rem; margin-right:0.25rem; } /** If two buttons then pad-left the second **/
 .button:hover { opacity:0.85; }
-.button.normal { background:#000; }
-.button.success { background:#5eae45; }
-.button.alert { background:#e01c33; }
-.button.information { background:#1a75ae; }
+.button + .button { margin-left:0.25rem; margin-right:0.25rem; } /** If two buttons then pad-left the second **/ 
+.button.normal { background:#000; } .button.success { background:#5eae45; } .button.alert { background:#e01c33; } .button.information { background:#1a75ae; }
 .button.rounded { border-radius:0.25rem; -moz-border-radius:0.25rem; -webkit-border-radius:0.25rem; }
 
 /** Aside-Menu - Navigation Menu **/
-    nav a { text-decoration:none; color:#000; width:100%; cursor:pointer; }
-    nav.aside-menu { height:25rem; overflow:auto; overflow-x:hidden; }
-    nav.aside-menu > ul > li { display:block; padding:0.5rem 0rem 0.5rem 0rem; width:100%; font-weight:bold; }
-    nav.aside-menu > ul > ul > menuitem > .button, nav.aside-menu > ul > ul > li > .button, nav.aside-menu > ul > ul > .button { margin-left:0; margin-right:0; padding:0.5rem 0 0.5rem 0; position:static; border-top:1px dotted #ddd; color:#000; width:100%; white-space:normal; word-wrap:normal; } /** Nav Menu Items Take Full Width **/
-    nav.aside-menu > ul > ul > menuitem > .button:hover, 
-    nav.aside-menu > ul > ul > li > .button:hover, 
-    nav.aside-menu > ul > ul > .button:hover
-        { background:#f5f5f5; } /** Nav Menu Items Take Full Width **/
-    nav.aside-menu a, nav.aside-menu small { display:block; padding:0.25rem 1rem 0.25rem 1rem; }
+nav a { text-decoration:none; color:#000; width:100%; cursor:pointer; }
+nav.aside-menu { height:25rem; overflow:auto; overflow-x:hidden; }
+nav.aside-menu > ul > li { display:block; padding:0.5rem 0rem 0.5rem 0rem; width:100%; font-weight:bold; }
+nav.aside-menu > ul > ul > menuitem > .button, nav.aside-menu > ul > ul > li > .button, nav.aside-menu > ul > ul > .button { margin-left:0; margin-right:0; padding:0.5rem 0 0.5rem 0; position:static; border-top:1px dotted #ddd; width:100%; white-space:normal; word-wrap:normal; } /** Nav Menu Items Take Full Width **/
+nav.aside-menu > ul > ul > menuitem > .button:hover, nav.aside-menu > ul > ul > li > .button:hover, nav.aside-menu > ul > ul > .button:hover { background:#f5f5f5; } /** Nav Menu Items Take Full Width **/
+nav.aside-menu a, nav.aside-menu small { display:block; padding:0.25rem 1rem 0.25rem 1rem; }
 
 /** Forms **/
 form li { margin-top:0.5rem; line-height:1.75rem; }
-form li > label { font-size:1rem; line-height:1rem; }
+form li > label { font-size:1rem; line-height:1rem; }  
 form li > input { border:1px solid #ddd; background:#fafafa; padding:0.25rem; color:#555; }
 
 /** Inline Elements Define **/
@@ -82,7 +75,7 @@ pre { background:#f5f5f5; border:1px solid #ddd; padding:5px; overflow:auto; } /
     nav.aside-menu > ul > ul { display:none; height:25rem; overflow:auto; } 
     nav.aside-menu > ul:hover > ul, nav.aside-menu > ul:focus > ul { display:block; }
 }
-@media (min-width: 400px) and (max-width:799px) {    /** Mobile View **/
+@media (min-width: 400px) and (max-width:899px) {    /** Mobile View **/
     .row { max-width:95%; } /** Small screens should have less margin from device edge **/
     .small-1  { width:6.25%;  } .column + .small-1 { width:6.0%; margin-left:1.25%; }
     .small-2  { width:12.50%; } .column + .small-2 { width:11.0%; margin-left:1.50%; }
@@ -107,7 +100,7 @@ pre { background:#f5f5f5; border:1px solid #ddd; padding:5px; overflow:auto; } /
     nav.aside-menu > ul > ul { display:none; height:25rem; overflow:auto; } 
     nav.aside-menu > ul:hover > ul, nav.aside-menu > ul:focus > ul { display:block; }
 }
-@media (min-width: 800px) and (max-width:1279px) {    /** Tablet / Laptop / Desktop View **/
+@media (min-width: 900px) and (max-width:1279px) {    /** Tablet / Laptop / Desktop View **/
     .medium-1  { width:6.25%;  } .column + .medium-1 { width:6.0%; margin-left:1.25%; }
     .medium-2  { width:12.50%; } .column + .medium-2 { width:11.0%; margin-left:1.50%; }
     .medium-3  { width:18.75%; } .column + .medium-3 { width:17.25%; margin-left:1.50%; }
