@@ -1,9 +1,11 @@
 # StringBean
-The featherweight responsive CSS Framework based on a 16-point system (rather than the traditional 12-point system that other frameworks use) this gives the developer the power to divide the screen up in more finite segments. The extra 4 break points give you greater control over the widths of content on your site. Sometimes, 12 is just too few, especially on a high resolution screen, such as 4K - at 4K String Bean comes into its own! 
+The featherweight responsive CSS Framework based on a 16-point system, rather than the traditional 12-point system that other frameworks use. 
 
-In addition to this, String Bean also has 5 breakpoints instead of the traditional 4. You can implement your design with: xsmall, small, medium, large, and xlarge.
+Sometimes, 12 is just too few, especially on a high resolution screen, such as 4K - at 4K String Bean comes into its own!  This gives the developer the power to divide the screen up in more finite segments providing you with greater control over the widths of content on your site, especially at higher resolutions (think 2k, 3k, and 4k screens).
 
-## Examples
+In addition to this, String Bean also has 5 breakpoints, instead of the traditional 4, so you can implement your design with: xsmall, small, medium, large, and xlarge.
+
+## How it works
 
 ### Simple Header Layout
 This demonstrates a page layout with StringBean classes applied.  You will notice a number of things specified, but take note of the line "column xsmall-16 small-16 medium-10 large-11 xlarge-12" - this defines the division as a column (floats left) then applies a point system with the xsmall-x small-x etc, similar to Bootstrap and Foundation 5, but with a twist:- we use a 16 point system rather than the limiting 12 point system used in the aforementioned.
