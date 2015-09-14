@@ -26,8 +26,15 @@ This demonstrates a page layout with StringBean classes applied.  You will notic
 #### Layouts
 Layouts give you the power to set a max-width size on the content so that when viewing the site above that breakpoint the site will be fixed width.  Viewing the site below that size (on a mobile or tablet etc) will make the site responsive.
 
-    <main class="grid-960">
-        <!-- Your content in here -->
+    <main class="container">
+        <article class="row grid-960">
+            <h1>
+                <!-- Title in here -->
+            </h1>
+            <p>
+                <!-- Text in here -->
+            </p>
+        </article>
     </main>
 
 #### Buttons
