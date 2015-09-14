@@ -6,6 +6,7 @@ In addition to this, String Bean also has 5 breakpoints instead of the tradition
 ## Examples
 
 #### Simple Header Layout
+This demonstrates a page layout with StringBean classes applied.  You will notice a number of things specified, but take note of the line "column xsmall-16 small-16 medium-10 large-11 xlarge-12" - this defines the division as a column (floats left) then applies a point system with the xsmall-x small-x etc, similar to Bootstrap and Foundation 5, but with a twist:- we use a 16 point system rather than the limiting 12 point system used in the aforementioned.
 
     <header class="container">
       <nav class="row">
@@ -22,12 +23,21 @@ In addition to this, String Bean also has 5 breakpoints instead of the tradition
       </nav>
     </header>
 
+#### Layouts
+Layouts give you the power to set a max-width size on the content so that when viewing the site above that breakpoint the site will be fixed width.  Viewing the site below that size (on a mobile or tablet etc) will make the site responsive.
+
+    <main class="grid-960">
+        <!-- Your content in here -->
+    </main>
+
 #### Buttons
+The button classes provide a beautiful way to display a button to the user.  If you combine the button class with other classes such as "information" (blue colour), "alert" (red), and "success" (green) you can display the right button for the action.
 
     <a href="/login" class="button normal information">Login</a>
     <a href="/login" class="button normal alert">Register</a>
 
 #### Grid
+The grid class is like the row class, except it accepts "box" sub elements (as per below).  These are used in combination to display a responsive grid to the user - a good use case for this would be a gallery of photos.
 
     <div class="grid">
         <li class="box xsmall-16 small-16 medium-7 large-5 xlarge-3">
