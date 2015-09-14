@@ -8,8 +8,8 @@ h1,h2,h3,h4,h5,h6 { padding:0; padding-top:1rem; margin:0; }
 .container { display:block; padding-top:1rem; padding-bottom:1rem; }
 .row { display:block; max-width:90%; margin:auto; clear:both; }
 .grid { display:block; margin:auto; clear:both; }
-.grid-800 { max-width:800px; } .grid-860 { max-width:860px; } .grid-900 { max-width:900px; } .grid-960 { max-width:960px; } .grid-980 { max-width:980px; } .grid-1000 { max-width:1000px; }  /** Enforce Grid max widths **/
-    
+.grid-800 { max-width:800px; } .grid-860 { max-width:860px; } .grid-900 { max-width:900px; } .grid-960 { max-width:960px; } .grid-980 { max-width:980px; } .grid-1000 { max-width:1000px; } .grid-1024 { max-width:1024px; } .grid-1200 { max-width:1200px; } .grid-1400 { max-width:1400px; }  /** Enforce Grid max widths **/
+
 /** Alignment **/
 .align-left { text-align:left; } .align-center { text-align:center; } .align-right { text-align:right; }
 
