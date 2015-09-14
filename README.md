@@ -78,7 +78,7 @@ The button classes provide a beautiful way to display a button to the user.  If 
     <a href="/login" class="button normal information">Login</a>
     <a href="/login" class="button normal alert">Register</a>
 
-### Grid
+### Grids
 The grid class is like the row class, except it accepts "box" sub elements (as per below).  These are used in combination to display a responsive grid to the user - a good use case for this would be a gallery of photos.
 
     <ul class="grid">
