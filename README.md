@@ -75,12 +75,19 @@ You can hide content below certain breakpoints - for instance: hide-below-large 
         Hello World!
     </div>
 
-#### Showing Content Only on Certain Breakpoints
+##### Showing Content Only on Certain Breakpoints
 You can use the show-only-x set of selectors to show content on certain breakpoints only.  The below example will show your element only on xsmall and large screens, and will be hidden for all other breakpoints.
 
     <div class="show-only-xsmall show-only-large">
         Hello World!
     </div>
+
+### Buttons
+The button classes provide a beautiful way to display a button to the user.  
+
+    <a href="/login" class="button">Login</a>
+    <a href="/login" class="button">Register</a>
+    <a href="/login" class="button">Contact</a>
 
 ### Element Colour Selectors
 you can easily and consistently colour speciality/focus elements with standardised colours using selectors from the below table.
@@ -93,12 +100,25 @@ you can easily and consistently colour speciality/focus elements with standardis
     alert           Red         d93f3f
     regal           Purple      774a79
 
-### Buttons
-The button classes provide a beautiful way to display a button to the user.  If you combine the button class with other classes such as "information" (blue colour), "alert" (red), and "success" (green) you can display the right button for the action.
+##### Buttons with Colour Selectors
+If you combine the button class with other classes such as "information" (blue colour), "alert" (red), and "success" (green) you can display the right button for the action.
 
-    <a href="/login" class="button normal information">Login</a>
-    <a href="/login" class="button normal alert">Register</a>
-    <a href="/login" class="button normal success">Contact</a>
+    <a href="/login" class="button normal">Login</a>
+    <a href="/login" class="button inactive">Register</a>
+    <a href="/login" class="button alert">Contact</a>
+
+##### Divisions with Colour Selectors
+You can also apply colour sleectors to other elements such as divisions...
+
+    <div class="alert">
+        There was an error saving your password!
+    </div>
+
+or...
+
+    <aside class="success">
+        You are logged in! (<a href="#logout">Logout</a>)
+    </aside>
 
 ### Grids
 The grid class is like the row class, except it accepts "box" sub elements (as per below).  These are used in combination to display a responsive grid to the user - a good use case for this would be a gallery of photos.
