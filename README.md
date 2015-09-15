@@ -51,10 +51,10 @@ Layouts give you the power to set a max-width size on the content so that when v
     <main class="container">
         <article class="row grid-960">
             <h1>
-                <!-- Title in here -->
+                Hello World!
             </h1>
             <p>
-                <!-- Text in here -->
+                Some content goes in here.
             </p>
         </article>
     </main>
@@ -72,11 +72,19 @@ You can hide content below certain breakpoints - for instance: hide-below-large 
         Hello World!
     </div>
 
+### Showing Content Only on Certain Breakpoints
+You can use the show-only-x set of selectors to show content on certain breakpoints only.  The below example will show your element only on xsmall and large screens, and will be hidden for all other breakpoints.
+
+    <div class="show-only-xsmall show-only-large">
+        Hello World!
+    </div>
+
 ### Buttons
 The button classes provide a beautiful way to display a button to the user.  If you combine the button class with other classes such as "information" (blue colour), "alert" (red), and "success" (green) you can display the right button for the action.
 
     <a href="/login" class="button normal information">Login</a>
     <a href="/login" class="button normal alert">Register</a>
+    <a href="/login" class="button normal success">Contact</a>
 
 ### Grids
 The grid class is like the row class, except it accepts "box" sub elements (as per below).  These are used in combination to display a responsive grid to the user - a good use case for this would be a gallery of photos.
