@@ -69,14 +69,14 @@ You can hide content below certain breakpoints - for instance: hide-below-large 
 
 ##### Showing Content Below Certain Breakpoints
 
-    <div class="show-below-large">
+    <div class="hide-above-medium">
         Hello World!
     </div>
 
 ##### Showing Content Only on Certain Breakpoints
 You can use the show-only-x set of selectors to show content on certain breakpoints only.  The below example will show your element only on xsmall and large screens, and will be hidden for all other breakpoints.
 
-    <div class="show-only-xsmall show-only-large">
+    <div class="show-only-medium show-only-xlarge">
         Hello World!
     </div>
 
