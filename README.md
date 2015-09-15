@@ -47,7 +47,7 @@ If you apply this class then it will take 16 points (full width of parent) in al
 Layouts give you the power to set a max-width size on the content so that when viewing the site above that breakpoint the site will be fixed width.  Viewing the site below that size (on a mobile or tablet etc) will make the site responsive.
 
     <main class="container">
-        <article class="row grid-960">
+        <article class="row layout-960">
             <h1>
                 Hello World!
             </h1>
