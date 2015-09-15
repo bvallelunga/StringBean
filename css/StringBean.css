@@ -13,6 +13,7 @@ h1 {font-size:3rem;} h2 {font-size:2.5rem;} h3 {font-size:2rem;} h4 {font-size:1
 
 /** Visibility Resets **/
 .show-only-xsmall, .show-only-small, .show-only-medium, .show-only-large, .show-only-xlarge { display:none; }
+.hide-above-xsmall, .hide-above-small, .hide-above-medium, .hide-above-large { display:none; }
 
 /** Alignment **/
 .align-left { text-align:left; } .align-center { text-align:center; } .align-right { text-align:right; }
@@ -73,7 +74,7 @@ pre { background:#f5f5f5; border:1px solid #ddd; padding:5px; overflow:auto; } /
     .xsmall-15 { width:93.75%; } .column + .xsmall-15 { width:92.25%; margin-left:1.5%; }
     .xsmall-16, .full-16 { width:99.99%; }
     .hide-below-small, .hide-below-medium, .hide-below-large, .hide-below-xlarge { display:none; }  /** Hide elements below certain points **/
-    .show-below-small, .show-below-medium, .show-below-large, .show-below-xlarge { display:inline-block; }  /** Show elements only below certain points **/
+    .hide-above-xsmall, .hide-above-small, .hide-above-medium, .hide-above-large { display:inline-block; }  /** Show elements only below certain points **/
     .show-only-xsmall { display:inline-block; }
     /** Nav Menu Collapses in <Small Breakpoints **/
     nav.aside-menu { height:auto; }
@@ -99,7 +100,7 @@ pre { background:#f5f5f5; border:1px solid #ddd; padding:5px; overflow:auto; } /
     .small-15 { width:93.75%; } .column + .small-15 { width:92.25%; margin-left:1.5%; }
     .small-16, .full-16 { width:99.99%; }
     .hide-below-medium, .hide-below-large, .hide-below-xlarge { display:none; }  /** Hide elements below certain points **/
-    .show-below-medium, .show-below-large, .show-below-xlarge { display:inline-block; } .show-below-small { display:none; }  /** Show elements only below certain points **/
+    .hide-above-small, .hide-above-medium, .hide-above-large { display:inline-block; }  /** Show elements only below certain points **/
     .show-only-small { display:inline-block; }
     /** Nav Menu Collapses in <Small Breakpoints **/
     nav.aside-menu { height:auto; }
@@ -124,7 +125,7 @@ pre { background:#f5f5f5; border:1px solid #ddd; padding:5px; overflow:auto; } /
     .medium-15 { width:93.75%; } .column + .medium-15 { width:92.25%; margin-left:1.5%; }
     .medium-16, .full-16 { width:99.99%; }
     .hide-below-large, .hide-below-xlarge { display:none; }  /** Hide elements below certain points **/
-    .show-below-large, .show-below-xlarge { display:inline-block; } .show-below-small, .show-below-medium { display:none; }  /** Show elements only below certain points **/
+    .hide-above-medium, .hide-above-large { display:inline-block; } /** Show elements only below certain points **/
     .show-only-medium { display:inline-block; }
 }
 @media (min-width: 1280px) and (max-width:1919px) {    /** Desktop / Laptop View **/
@@ -145,7 +146,7 @@ pre { background:#f5f5f5; border:1px solid #ddd; padding:5px; overflow:auto; } /
     .large-15 { width:93.75%; } .column + .large-15 { width:92.25%; margin-left:1.5%; }
     .large-16, .full-16 { width:99.99%; }
     .hide-below-xlarge { display:none; }  /** Hide elements below certain points **/
-    .show-below-xlarge { display:inline-block; } .show-below-small, .show-below-medium, .show-below-large { display:none; }  /** Show elements only below certain points **/
+    .hide-above-large { display:inline-block; }  /** Show elements only below certain points **/
     .show-only-large { display:inline-block; }
 }
 @media (min-width: 1920px) {    /** High Definition Devices **/
