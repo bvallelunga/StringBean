@@ -31,8 +31,10 @@ input.button { padding:0; margin:0; }
 .button { padding-left:1.5rem; padding-right:1.5rem; padding-top:0.75rem; padding-bottom:0.75rem; margin-left:0.25rem; position:relative; left:-0.25rem; margin-right:0.25rem; color:#fff; font-size:1rem; line-height:1rem; text-decoration:none; opacity:1; display:inline-block; white-space: nowrap; }
 .button:hover { opacity:0.85; }
 .button + .button { margin-left:0.25rem; margin-right:0.25rem; } /** If two buttons then pad-left the second **/ 
-.button.normal { background:#000; } .button.success { background:#5eae45; } .button.alert { background:#e01c33; } .button.information { background:#1a75ae; }
 .button.rounded { border-radius:0.25rem; -moz-border-radius:0.25rem; -webkit-border-radius:0.25rem; }
+
+/** Element Colouring **/
+.normal { background:#000; } .inactive { background:#9b9b9b; } .success { background:#5eae45; } .alert { background:#d93f3f; } .information { background:#1a75ae; } .regal { background:#774a79; }
 
 /** Aside-Menu - Navigation Menu **/
 nav a { text-decoration:none; color:#000; width:100%; cursor:pointer; }
