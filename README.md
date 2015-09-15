@@ -27,7 +27,7 @@ This demonstrates a page layout with StringBean classes applied.  You will notic
 
 #### Breakpoint Breakdown
 
-    Class           (x) Points      Device Widths
+    SELECTOR        (x)POINTS       DEVICE WIDTHS
     xsmall-x        1 to 16         =< 399px
     small-x         1 to 16         400px to 899px
     medium-x        1 to 16         900px to 1279px
@@ -78,6 +78,17 @@ You can use the show-only-x set of selectors to show content on certain breakpoi
     <div class="show-only-xsmall show-only-large">
         Hello World!
     </div>
+
+### Element Colour Selectors
+you can easily and consistently colour speciality/focus elements with standardised colours using selectors from the below table.
+
+    SELECTOR        COLOUR      HEX CODE
+    normal          Black       000000
+    inactive        Grey        9d9d9d
+    information     Blue        1a75ae
+    success         Green       5eae45
+    alert           Red         d93f3f
+    regal           Purple      774a79
 
 ### Buttons
 The button classes provide a beautiful way to display a button to the user.  If you combine the button class with other classes such as "information" (blue colour), "alert" (red), and "success" (green) you can display the right button for the action.
