@@ -59,20 +59,23 @@ Layouts give you the power to set a max-width size on the content so that when v
         </article>
     </main>
 
-### Hiding Content Below Breakpoints
+### Showing/Hiding Elements at Certain Breakpoints
+You can use different sets of show/hide selectors to present the right content to the right device users without having to inject content - just mark the elements you wish to show/hide with StringBean selectors.
+
+##### Hiding Content Below Breakpoints
 You can hide content below certain breakpoints - for instance: hide-below-large will hide the element below the large breakpoint.
 
     <div class="hide-below-medium">
         Hello world!
     </div>
 
-### Showing Content Below Certain Breakpoints
+##### Showing Content Below Certain Breakpoints
 
     <div class="show-below-large">
         Hello World!
     </div>
 
-### Showing Content Only on Certain Breakpoints
+#### Showing Content Only on Certain Breakpoints
 You can use the show-only-x set of selectors to show content on certain breakpoints only.  The below example will show your element only on xsmall and large screens, and will be hidden for all other breakpoints.
 
     <div class="show-only-xsmall show-only-large">
