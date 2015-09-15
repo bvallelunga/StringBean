@@ -6,8 +6,6 @@ Sometimes, 12 is just too few, especially on a high resolution screen, such as 4
 In addition to this, String Bean also has 5 breakpoints, instead of the traditional 4, so you can implement your design with: xsmall, small, medium, large, and xlarge.
 
 ## How it works
-
-### Simple Header Layout
 This demonstrates a page layout with StringBean classes applied.  You will notice a number of things specified, but take note of the line "column xsmall-16 small-16 medium-10 large-11 xlarge-12" - this defines the division as a column (floats left) then applies a point system with the xsmall-x small-x etc, similar to Bootstrap and Foundation 5, but with a twist:- we use a 16 point system rather than the limiting 12 point system used in the aforementioned.
 
     <header class="container">
