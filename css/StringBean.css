@@ -12,9 +12,10 @@ h1,h2,h3,h4,h5,h6,p,span,small,li { padding-top:1em; } /** Adds top padding for 
 .layout-800, .layout-860, .layout-900, .layout-960, .layout-980, .layout-1000, .layout-1024, .layout-1200, .layout-1400 { padding-left:0.5rem; padding-right:0.5rem; }
 .layout-800 { max-width:800px; } .layout-860 { max-width:860px; } .layout-900 { max-width:900px; } .layout-960 { max-width:960px; } .layout-980 { max-width:980px; } .layout-1000 { max-width:1000px; } .layout-1024 { max-width:1024px; } .layout-1200 { max-width:1200px; } .layout-1400 { max-width:1400px; }  /** Enforce Grid max widths **/
 
-/** Visibility Resets **/
+/** Visibility/Display **/
 .show-only-xsmall, .show-only-small, .show-only-medium, .show-only-large, .show-only-xlarge { display:none; }
 .hide-above-xsmall, .hide-above-small, .hide-above-medium, .hide-above-large { display:none; }
+.hide { display:none; } .
 
 /** Adds Padding to Child of Column or Grid-Box Elements **/
 .column, .box { display:block; float:left; padding-top:0.5rem; }
