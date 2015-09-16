@@ -45,6 +45,7 @@ input.button { }
 .button + .button { margin-left:0.25rem; margin-right:0.25rem; } /** If two buttons then pad-left the second **/ 
 
 /** Element Colouring & Styling **/
+.normal, .inactive, .success, .alert, .information, .regal { padding:0.5rem; color:#fff; }
 .normal { background:#000; } .inactive { background:#9b9b9b; } .success { background:#5eae45; } .alert { background:#d93f3f; } .information { background:#1a75ae; } .regal { background:#774a79; }
 .rounded { border-radius:2px; -moz-border-radius:2px; -webkit-border-radius:2px; }
 .no-padding { padding:0 0 0 0; } .no-margin { margin:0 0 0 0; }  /** Padding and Margin Modifiers **/
