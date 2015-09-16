@@ -2,7 +2,6 @@ html { font-size:13px; }
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin:0; padding:0; border:0; font-size:100%; font:inherit; vertical-align:baseline; box-sizing:border-box; line-height:1.25em; }
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
 ol, ul { list-style: none; }
-h1,h2,h3,h4,h5,h6 { padding:0; margin:0; }
 h1 {font-size:3rem;} h2 {font-size:2.5rem;} h3 {font-size:2rem;} h4 {font-size:1.5rem;} h5 {font-size:1rem;} h6 {font-size:0.75rem;}
 h1,h2,h3,h4,h5,h6,p,span,small,li { padding-top:1em; } /** Adds top padding for all text-bearing elements **/
 
@@ -45,13 +44,13 @@ input[type="submit"] { }
 
 /** Buttons **/
 input.button { }
-.button { display:inline-block; width:auto; border:0; padding:0; padding-left:1.5rem; padding-right:1.5rem; min-height:2rem; line-height:2rem; vertical-align:middle; margin-left:0.25rem; position:relative; left:-0.25rem; margin-right:0.25rem; color:#fff; font-size:1rem; font-weight:bold; text-decoration:none; opacity:1; white-space: nowrap; }
+.button { display:inline-block; width:auto; border:0; padding:0.25rem; padding-left:1.5rem; padding-right:1.5rem; min-height:2rem; line-height:1.5rem; vertical-align:middle; margin-left:0.25rem; position:relative; left:-0.25rem; margin-right:0.25rem; color:#fff; font-size:1rem; font-weight:bold; text-decoration:none; opacity:1; white-space: nowrap; }
 .button:hover { opacity:0.85; }
 .button + .button { margin-left:0.25rem; margin-right:0.25rem; } /** If two buttons then pad-left the second **/ 
-.button.rounded { border-radius:0.25rem; -moz-border-radius:0.25rem; -webkit-border-radius:0.25rem; }
 
-/** Element Colouring **/
+/** Element Colouring & Styling **/
 .normal { background:#000; } .inactive { background:#9b9b9b; } .success { background:#5eae45; } .alert { background:#d93f3f; } .information { background:#1a75ae; } .regal { background:#774a79; }
+.rounded { border-radius:2px; -moz-border-radius:2px; -webkit-border-radius:2px; }
 
 /** Inline Elements Define **/
 p { padding-top:0.5rem; padding-bottom:0.5rem; } /** Give Paragraphs Top and Bottom Spacing **/
