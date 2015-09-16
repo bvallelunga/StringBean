@@ -16,9 +16,6 @@ h1,h2,h3,h4,h5,h6,p,span,small,li { padding-top:1em; } /** Adds top padding for 
 .show-only-xsmall, .show-only-small, .show-only-medium, .show-only-large, .show-only-xlarge { display:none; }
 .hide-above-xsmall, .hide-above-small, .hide-above-medium, .hide-above-large { display:none; }
 
-/** Alignment **/
-.align-left { text-align:left; } .align-center { text-align:center; } .align-right { text-align:right; }
-
 /** Adds Padding to Child of Column or Grid-Box Elements **/
 .column, .box { display:block; float:left; padding-top:0.5rem; }
 .column > div, .column > p, .column > aside, .column > table, .column > ul, .column > ol, .column > nav,
@@ -40,7 +37,6 @@ nav.aside-menu a, nav.aside-menu small { display:block; padding:0.25rem 1rem 0.2
 form li { margin-top:0rem; min-height:2rem; line-height:2rem; vertical-align:middle; }
 form li > label { font-size:1rem; font-weight:bold; line-height:1.5rem; padding-top:0.5rem; }
 input, textarea { width:100%; border:1px solid #ddd; background:#fafafa; padding:0.25rem; font-size:1rem; line-height:1.5rem; color:#555; border-radius:2px; -moz-border-radius:2px; -webkit-border-radius:2px; }
-input[type="submit"] { }
 
 /** Buttons **/
 input.button { }
@@ -51,10 +47,10 @@ input.button { }
 /** Element Colouring & Styling **/
 .normal { background:#000; } .inactive { background:#9b9b9b; } .success { background:#5eae45; } .alert { background:#d93f3f; } .information { background:#1a75ae; } .regal { background:#774a79; }
 .rounded { border-radius:2px; -moz-border-radius:2px; -webkit-border-radius:2px; }
-
-/** Inline Elements Define **/
-p { padding-top:0.5rem; padding-bottom:0.5rem; } /** Give Paragraphs Top and Bottom Spacing **/
 .no-padding { padding:0 0 0 0; } .no-margin { margin:0 0 0 0; }  /** Padding and Margin Modifiers **/
+.align-left { text-align:left; } .align-center { text-align:center; } .align-right { text-align:right; }
+
+/** Speciality Elements **/
 pre { background:#f5f5f5; border:1px solid #ddd; padding:5px; overflow:auto; } /** PRE & CODE formatting **/
 
 @media screen and (max-width: 399px) {    /** Smallest Mobile View **/
