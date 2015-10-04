@@ -1,6 +1,6 @@
 html { font-size:13px; }
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin:0; padding:0; border:0; font-size:100%; font:inherit; vertical-align:baseline; box-sizing:border-box; line-height:1.25em; }
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { display:block; margin:0; padding:0; border:0; font-size:100%; font:inherit; vertical-align:baseline; box-sizing:border-box; line-height:1.25em; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: inline-block; }
 ol, ul { list-style: none; }
 h1 {font-size:3rem;} h2 {font-size:2.5rem;} h3 {font-size:2rem;} h4 {font-size:1.5rem;} h5 {font-size:1rem;} h6 {font-size:0.75rem;}
 h1,h2,h3,h4,h5,h6,p,span,small,li { padding-top:1em; } /** Adds top padding for all text-bearing elements **/
@@ -15,10 +15,11 @@ h1,h2,h3,h4,h5,h6,p,span,small,li { padding-top:1em; } /** Adds top padding for 
 /** Visibility/Display **/
 .show-only-xsmall, .show-only-small, .show-only-medium, .show-only-large, .show-only-xlarge { display:none; }
 .hide-above-xsmall, .hide-above-small, .hide-above-medium, .hide-above-large { display:none; }
-.hide { display:none; } .
+.hide { display:none; }
 
 /** Adds Padding to Child of Column or Grid-Box Elements **/
 .column, .box { display:block; float:left; padding-top:0.5rem; }
+
 .column > div, .column > p, .column > aside, .column > table, .column > ul, .column > ol, .column > nav,
 .column > h1, .column > h2, .column > h3, .column > h4, .column > h5, .column > h6, .column > li, .column > small,
 .column > article, .column > header, .column > footer, .column > canvas, .column > img, .column > form,
@@ -37,7 +38,7 @@ nav.aside-menu a, nav.aside-menu small { display:block; padding:0.25rem 1rem 0.2
 /** Forms **/
 form li { margin-top:0rem; min-height:2rem; line-height:2rem; vertical-align:middle; }
 form li > label { font-size:1rem; font-weight:bold; line-height:1.5rem; padding-top:0.5rem; }
-input, textarea { width:100%; border:1px solid #ddd; background:#fafafa; padding:0.25rem; font-size:1rem; line-height:1.5rem; color:#555; border-radius:2px; -moz-border-radius:2px; -webkit-border-radius:2px; }
+input, textarea, select { width:100%; border:1px solid #ddd; background:#fafafa; padding:0.25rem; font-size:1rem; line-height:1.5rem; color:#555; border-radius:2px; -moz-border-radius:2px; -webkit-border-radius:2px; }
 
 /** Buttons **/
 input.button { }
