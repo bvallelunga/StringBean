@@ -3,25 +3,10 @@ The featherweight responsive CSS Framework based on a 16-point system, rather th
 
 Sometimes, 12 is just too few, especially on a high resolution screen, such as 4K - at 4K String Bean comes into its own!  This gives the developer the power to divide the screen up in more finite segments providing you with greater control over the widths of content on your site, especially at higher resolutions (think 2k, 3k, and 4k screens).
 
-In addition to this, String Bean also has 5 breakpoints, instead of the traditional 4, so you can implement your design with: xsmall, small, medium, large, and xlarge.
+In addition to this, String Bean also has 5 breakpoints, instead of the traditional 4, so you can implement your design with: xsmall, small, medium, large, mega-2k, mega-3k, and mega-4k.
 
 ## How it works
 This demonstrates a page layout with StringBean classes applied.  You will notice a number of things specified, but take note of the line "column xsmall-16 small-16 medium-10 large-11 xlarge-12" - this defines the division as a column (floats left) then applies a point system with the xsmall-x small-x etc, similar to Bootstrap and Foundation 5, but with a twist:- we use a 16 point system rather than the limiting 12 point system used in the aforementioned.
-
-    <header class="container">
-      <nav class="row">
-        <div class="column xsmall-16 small-16 medium-10 large-11 xlarge-12">
-          <h1>
-            StringBean
-          </h1>
-        </div>
-        <div class="column xsmall-16 small-16 medium-5 large-4 xlarge-3">
-          <p id="Strapline">
-            Powering the internet, gently.
-          </p>
-        </div>
-      </nav>
-    </header>
 
 #### Breakpoint Breakdown
 
@@ -30,13 +15,50 @@ This demonstrates a page layout with StringBean classes applied.  You will notic
     small-x         1 to 16         400px to 899px
     medium-x        1 to 16         900px to 1279px
     large-x         1 to 16         1280px to 1919px
-    xlarge-x        1 to 16         >= 1920px
+    mega-2k-x       1 to 16         1920px to 2047px
+    mega-3k-x       1 to 16         2048px to 3071px
+    mega-4k-x       1 to 16         3072px to ~
     full-16         16 (Fixed)      All Resolutions
 
 ##### Using breakpoint specific selectors
 You can stack the breakpoint selectors on an element.
 
     class="xsmall-5 small-9 medium-10 large-2"
+
+##### Example for normal resolutions
+
+    <header class="container">
+      <nav class="row">
+        <div class="column xsmall-16 small-16 medium-10 large-11">
+          <h1>
+            StringBean
+          </h1>
+        </div>
+        <div class="column xsmall-16 small-16 medium-5 large-4">
+          <p id="Strapline">
+            Powering the internet, gently.
+          </p>
+        </div>
+      </nav>
+    </header>
+
+##### 2K, 3K, and 4K Classes
+Notice the additional classes starting "mega-" - these define the breakpoints for 2K, 3K, and 4K.
+
+    <header class="container">
+      <nav class="row">
+        <div class="column xsmall-16 small-16 medium-10 large-11 mega-2k-13 mega-3k-14 mega-4k-15">
+          <h1>
+            StringBean
+          </h1>
+        </div>
+        <div class="column xsmall-16 small-16 medium-5 large-4 mega-2k-3 mega-3k-2 mega-4k-1">
+          <p id="Strapline">
+            Powering the internet, gently.
+          </p>
+        </div>
+      </nav>
+    </header>
 
 ##### Taking full width on all breakpoints
 If you apply this class then it will take 16 points (full width of parent) in all breakpoints.
