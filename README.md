@@ -6,7 +6,9 @@ Sometimes, 12 is just too few, especially on a high resolution screen, such as 4
 In addition to this, String Bean also has 5 breakpoints, instead of the traditional 4, so you can implement your design with: xsmall, small, medium, large, mega-2k, mega-3k, and mega-4k.
 
 ## How it works
-This demonstrates a page layout with StringBean classes applied.  You will notice a number of things specified, but take note of the line "column xsmall-16 small-16 medium-10 large-11 xlarge-12" - this defines the division as a column (floats left) then applies a point system with the xsmall-x small-x etc, similar to Bootstrap and Foundation 5, but with a twist:- we use a 16 point system rather than the limiting 12 point system used in the aforementioned.
+To define column widths we use a points system - each parent element/page is split into 16 points - you can then specify how wide a column or item is by applying the appropriate sized class, like so: class="column xsmall-16 small-16 medium-10 large-11".
+
+This defines the division as a column (floats left) and applies a hard width, similar to Bootstrap and Foundation 5, but with a twist:- we use a 16 point system rather than the limiting 12 point system used in the aforementioned.
 
 #### Breakpoint Breakdown
 
@@ -98,7 +100,7 @@ You can hide content below certain breakpoints - for instance: hide-below-large 
 ##### Showing Content Only on Certain Breakpoints
 You can use the show-only-x set of selectors to show content on certain breakpoints only.  The below example will show your element only on xsmall and large screens, and will be hidden for all other breakpoints.
 
-    <div class="show-only-medium show-only-xlarge">
+    <div class="show-only-medium show-only-large">
         Hello World!
     </div>
 
@@ -144,15 +146,15 @@ or...
 The grid class is like the row class, except it accepts "box" sub elements (as per below).  These are used in combination to display a responsive grid to the user - a good use case for this would be a gallery of photos.
 
     <ul class="grid">
-        <li class="box xsmall-16 small-16 medium-7 large-5 xlarge-3">
+        <li class="box xsmall-16 small-16 medium-7 large-5">
             Box #1
         </li>
         
-        <li class="box xsmall-16 small-16 medium-7 large-5 xlarge-3">
+        <li class="box xsmall-16 small-16 medium-7 large-5">
             Box #2
         </li>
         
-        <li class="box xsmall-16 small-16 medium-7 large-5 xlarge-3">
+        <li class="box xsmall-16 small-16 medium-7 large-5">
             Box #3
         </li>
     </ul>
