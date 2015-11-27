@@ -86,6 +86,7 @@
         .xsmall-14 { width:86.50%; }
         .xsmall-15 { width:92.75%; }
         .xsmall-16, .full-16 { width:99.00%; }
+        .xsmall-third { width:30.833% }
         .row { margin-left:0.5%; margin-right:0.5%; }
         .hide-below-small, .hide-below-medium, .hide-below-large, .hide-below-mega-2k, .hide-below-mega-3k, .hide-below-mega-4k { display:none; }  /** Hide elements below certain points **/
         .show-only-xsmall { display:block; }
@@ -110,6 +111,7 @@
         .small-14 { width:86.50%; }
         .small-15 { width:92.75%; }
         .small-16, .full-16 { width:99.00%; }
+        .small-third { width:30.833% }
         .row { margin-left:0.5%; margin-right:0.5%; }
         .hide-below-medium, .hide-below-large, .hide-below-mega-2k, .hide-below-mega-3k, .hide-below-mega-4k { display:none; }  /** Hide elements below certain points **/
         .hide-above-xsmall { display:none; }  /** Show elements only below certain points **/
@@ -134,6 +136,7 @@
         .medium-14 { width:85.00%; }
         .medium-15 { width:91.25%; }
         .medium-16, .full-16 { width:97.50%; }
+        .medium-third { width:30.833% }
         .hide-below-large, .hide-below-mega-2k, .hide-below-mega-3k, .hide-below-mega-4k { display:none; }  /** Hide elements below certain points **/
         .hide-above-xsmall, .hide-above-small { display:none; } /** Show elements only below certain points **/
         .show-only-medium { display:block; }
@@ -157,6 +160,7 @@
         .large-14 { width:85.00%; }
         .large-15 { width:91.25%; }
         .large-16, .full-16 { width:97.50%; }
+        .large-third { width:30.833% }
         .hide-below-mega-2k, .hide-below-mega-3k, .hide-below-mega-4k { display:none; }  /** Hide elements below certain points **/
         .hide-above-xsmall, .hide-above-small, .hide-above-medium { display:none; }  /** Show elements only below certain points **/
         .show-only-large { display:block; }
@@ -180,6 +184,7 @@
         .mega-2k-14 { width:85.00%; }
         .mega-2k-15 { width:91.25%; }
         .mega-2k-16, .full-16 { width:97.50%; }
+        .mega-2k-third { width:30.833% }
         .hide-below-mega-3k, .hide-below-mega-4k { display:none; }  /** Hide elements below certain points **/
         .hide-above-xsmall, .hide-above-small, .hide-above-medium, .hide-above-large { display:none; }
         .show-only-mega-2k { display:block; }
@@ -203,6 +208,7 @@
         .mega-3k-14 { width:85.00%; }
         .mega-3k-15 { width:91.25%; }
         .mega-3k-16, .full-16 { width:97.50%; }
+        .mega-3k-third { width:30.833% }
         .hide-below-mega-4k { display:none; }  /** Hide elements below certain points **/
         .hide-above-xsmall, .hide-above-small, .hide-above-medium, .hide-above-large, .hide-above-mega-2k { display:none; }
         .show-only-mega-3k { display:block; }
@@ -226,6 +232,7 @@
         .mega-4k-14 { width:85.00%; }
         .mega-4k-15 { width:91.25%; }
         .mega-4k-16, .full-16 { width:97.50%; }
+        .mega-4k-third { width:30.833% }
         .hide-above-xsmall, .hide-above-small, .hide-above-medium, .hide-above-large, .hide-above-mega-2k, .hide-above-mega-3k { display:none; }
         .show-only-mega-4k { display:block; }
     }
