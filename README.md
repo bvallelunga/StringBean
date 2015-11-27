@@ -27,7 +27,7 @@ You can stack the breakpoint selectors on an element.
 
     class="xsmall-5 small-9 medium-10 large-2"
 
-##### Example for normal resolutions
+##### Normal resolutions (sub-1080p HD)
 
     <header class="container">
       <nav class="row">
@@ -66,6 +66,19 @@ Notice the additional classes starting "mega-" - these define the breakpoints fo
 If you apply this class then it will take 16 points (full width of parent) in all breakpoints.
 
     class="full-16"
+
+##### Three-Way Split
+With great things comes a slight downside - and it is slight - 16 does not split equally three ways into integers. The knock-on effect of this is that you cannot have three identically width columns with the standard classes (as you would do with Bootstrap), so to achieve this three-way split we've added special classes to each breakpoint; where "medium" is replaced with the desired breakpoint and then "third" defines one-third of the screen:
+
+    <div class="column medium-third">
+        Column 1
+    </div>
+    <div class="column medium-third">
+        Column 2
+    </div>
+    <div class="column medium-third">
+        Column 3
+    </div>
 
 ### Layouts
 Layouts give you the power to set a max-width size on the content so that when viewing the site above that breakpoint the site will be fixed width.  Viewing the site below that size (on a mobile or tablet etc) will make the site responsive.
